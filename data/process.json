@@ -1,0 +1,39 @@
+{
+  "steps": [
+    {
+      "id": 1,
+      "number": "01",
+      "title": "Discover",
+      "description": "We understand your business, audience, and goals.",
+      "icon": "Search"
+    },
+    {
+      "id": 2,
+      "number": "02",
+      "title": "Plan",
+      "description": "We create a clear strategy and execution roadmap.",
+      "icon": "ClipboardList"
+    },
+    {
+      "id": 3,
+      "number": "03",
+      "title": "Create",
+      "description": "We design, develop, and test your digital platform.",
+      "icon": "PenTool"
+    },
+    {
+      "id": 4,
+      "number": "04",
+      "title": "Launch",
+      "description": "We go live with precision.",
+      "icon": "Rocket"
+    },
+    {
+      "id": 5,
+      "number": "05",
+      "title": "Grow",
+      "description": "We support your brand with marketing, SEO, and improvements.",
+      "icon": "TrendingUp"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "My Holiday Club",
+      "category": "Branding",
+      "location": "Chennai",
+      "year": "2024",
+      "images": ["/assets/images/client/c9.png"],
+      "size": "large",
+      "description": "A full brand identity refresh — logo system, color palette, and collateral — for a growing interior design studio expanding into new cities.",
+      "liveUrl": "https://example.com/work/my-holiday-club"
+    },
+    {
+      "id": 2,
+      "title": "Silk in Six Yard",
+      "category": "E-Commerce",
+      "location": "Bengaluru",
+      "year": "2023",
+      "images": ["/assets/images/client/c4.png"],
+      "size": "wide",
+      "description": "A headless storefront built for scale, with sub-second page loads and a checkout flow that lifted conversion by 32%.",
+      "liveUrl": "https://example.com/work/silk-in-six-yard"
+    },
+    {
+      "id": 3,
+      "title": "Kridha SaaS Dashboard",
+      "category": "App Development",
+      "location": "Hyderabad",
+      "year": "2024",
+      "images": ["/assets/images/client/c3.png"],
+      "size": "tall",
+      "description": "A data-dense analytics dashboard redesigned around clarity — fewer clicks to insight, and a component library the client's own team now maintains.",
+      "liveUrl": "https://example.com/work/kridha-saas-dashboard"
+    },
+    {
+      "id": 4,
+      "title": "Meridian Corporate Website",
+      "category": "Website",
+      "location": "Mumbai",
+      "year": "2022",
+      "images": ["/assets/images/client/c2.png"],
+      "size": "normal",
+      "description": "A corporate site rebuilt from the ground up for performance and SEO, moving the client onto page-one rankings for their core search terms.",
+      "liveUrl": "https://example.com/work/meridian-corporate-website"
+    },
+    {
+      "id": 5,
+      "title": "Aura Clothing Storefront",
+      "category": "E-Commerce",
+      "location": "New Delhi",
+      "year": "2023",
+      "images": ["/assets/images/client/c5.png"],
+      "size": "normal",
+      "description": "A fashion e-commerce experience with custom lookbook pages and an Instagram-integrated shoppable feed.",
+      "liveUrl": "https://example.com/work/aura-clothing-storefront"
+    },
+    {
+      "id": 6,
+      "title": "Willowbrook Hospitality App",
+      "category": "App Development",
+      "location": "Goa",
+      "year": "2024",
+      "images": ["/assets/images/client/c6.png"],
+      "size": "tall",
+      "description": "A booking and concierge app for a boutique hotel group, cutting phone reservations in half within the first quarter.",
+      "liveUrl": "https://example.com/work/willowbrook-hospitality-app"
+    },
+    {
+      "id": 7,
+      "title": "Cascade Restaurant Ordering Platform",
+      "category": "Website",
+      "location": "Pune",
+      "year": "2023",
+      "images": ["/assets/images/client/c8.png"],
+      "size": "wide",
+      "description": "An online ordering and table-reservation platform synced with the kitchen's POS, replacing three separate third-party tools.",
+      "liveUrl": "https://example.com/work/cascade-restaurant-ordering-platform"
+    },
+    {
+      "id": 8,
+      "title": "Linen & Co. Digital Campaign",
+      "category": "Digital Marketing",
+      "location": "Chennai",
+      "year": "2024",
+      "images": ["/assets/images/client/c1.png"],
+      "size": "normal",
+      "description": "An SEO and paid-social campaign that grew a boutique retailer's organic traffic 3x in six months.",
+      "liveUrl": "https://example.com/work/linen-co-digital-campaign"
+    },
+    {
+      "id": 9,
+      "title": "Skyline Realty Lead Platform",
+      "category": "Website",
+      "location": "Chennai",
+      "year": "2023",
+      "images": ["/assets/images/client/c7.png"],
+      "size": "normal",
+      "description": "A property-listing and lead-capture site for a real estate developer, with an inquiry funnel that doubled qualified leads.",
+      "liveUrl": "https://example.com/work/skyline-realty-lead-platform"
+    }
+  ]
+}

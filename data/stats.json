@@ -1,0 +1,7 @@
+{
+  "stats": [
+    { "id": 1, "value": 15, "suffix": "+", "label": "Years Of Experience" },
+    { "id": 2, "value": 2300, "suffix": "+", "label": "Projects Delivered" },
+    { "id": 3, "value": 10, "suffix": "+", "label": "Around The World" }
+  ]
+}

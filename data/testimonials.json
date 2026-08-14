@@ -1,0 +1,94 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "company": "Verona Interiors",
+      "industry": "Interior Design Studio",
+      "category": "Branding",
+      "previewImage": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
+      "review": "Raga Designers turned a vague brand brief into an identity that finally looks as premium as our work. Every touchpoint feels considered.",
+      "website": "https://verona-interiors.example.com",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "company": "Solstice Retail Group",
+      "industry": "E-Commerce",
+      "category": "E-Commerce",
+      "previewImage": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&q=80",
+      "review": "Our new storefront loads instantly and checkout abandonment dropped noticeably in the first month. The team clearly understands conversion.",
+      "website": "https://solstice-retail.example.com",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "company": "Kridha Technologies",
+      "industry": "SaaS",
+      "category": "App Development",
+      "previewImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      "review": "They rebuilt our dashboard's UX from scratch and our own support tickets about 'where do I find X' dropped to almost zero.",
+      "website": "https://kridha-tech.example.com",
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "company": "Meridian Corporate Advisory",
+      "industry": "Corporate Services",
+      "category": "Website",
+      "previewImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+      "review": "We interviewed five agencies before choosing Raga. Two years on, our site still ranks on page one for every term that matters to us.",
+      "website": "https://meridian-advisory.example.com",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "company": "Aura Clothing Co.",
+      "industry": "Fashion Retail",
+      "category": "E-Commerce",
+      "previewImage": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80",
+      "review": "Our online store now photographs and shops like a flagship boutique. Mobile sales alone are up 40% since launch.",
+      "website": "https://aura-clothing.example.com",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "company": "Willowbrook Hospitality",
+      "industry": "Hospitality",
+      "category": "App Development",
+      "previewImage": "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=800&q=80",
+      "review": "Direct bookings through our app have cut our OTA commission costs dramatically — the app paid for itself in under a year.",
+      "website": "https://willowbrook-hospitality.example.com",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "company": "Cascade Restaurant Group",
+      "industry": "Restaurant & Hospitality",
+      "category": "Website",
+      "previewImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+      "review": "Guests now order and reserve tables without ever calling us. Our front desk finally has time to actually greet people.",
+      "website": "https://cascade-restaurants.example.com",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "company": "Nova Design Studio",
+      "industry": "Creative Agency",
+      "category": "Website",
+      "previewImage": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=800&q=80",
+      "review": "As a design studio ourselves we're picky — Raga's build quality and attention to motion detail impressed our whole team.",
+      "website": "https://nova-design-studio.example.com",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "company": "Linen & Co.",
+      "industry": "Boutique Retail",
+      "category": "Digital Marketing",
+      "previewImage": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80",
+      "review": "Our organic traffic tripled in six months without touching paid ads. The SEO roadmap they gave us was genuinely actionable.",
+      "website": "https://linen-and-co.example.com",
+      "rating": 4
+    }
+  ]
+}

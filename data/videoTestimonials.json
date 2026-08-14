@@ -1,0 +1,18 @@
+{
+  "videoTestimonials": [
+    {
+      "id": 1,
+      "name": "Kumar",
+      "designation": "Managing Partner, Leo Trades",
+      "video": "/assets/video/reviews/review-1.mp4",
+      "googleReviewUrl": "https://g.page/r/your-dummy-review-link-1/review"
+    },
+    {
+      "id": 2,
+      "name": "Silambarasan",
+      "designation": "Managing Partner, Orange Interiors",
+      "video": "/assets/video/reviews/review-2.mp4",
+      "googleReviewUrl": "https://g.page/r/your-dummy-review-link-2/review"
+    }
+  ]
+}
