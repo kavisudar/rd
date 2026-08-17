@@ -16,7 +16,23 @@ function Screen({ screenshot, logo, companyName, industry, compact, sizes }) {
   return <VisualFallback logo={logo} companyName={companyName} industry={industry} compact={compact} />;
 }
 
-export default function DeviceShowcase({ screenshot, logo, companyName, industry }) {
+export default function DeviceShowcase({ screenshot, mockupImage, logo, companyName, industry }) {
+  if (mockupImage) {
+    return (
+      <div className="relative overflow-hidden rounded-2xl border border-border bg-linear-to-br from-card to-bg-secondary/70 p-6 sm:rounded-[20px] sm:p-8">
+        <div className="relative aspect-[3/2] w-full">
+          <Image
+            src={mockupImage}
+            alt={`${companyName} website preview on laptop and mobile`}
+            fill
+            sizes="(min-width: 1024px) 32vw, 60vw"
+            className="object-contain"
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="relative flex items-center justify-center overflow-hidden rounded-2xl border border-border bg-linear-to-br from-card to-bg-secondary/70 px-6 py-9 sm:rounded-[20px] sm:px-10 sm:py-11">
       <div className="relative w-[74%] max-w-sm">

@@ -12,6 +12,10 @@ import logo9 from "@/public/assets/images/client-logo/logo9.png";
 import logo10 from "@/public/assets/images/client-logo/logo10.png";
 import logo11 from "@/public/assets/images/client-logo/logo11.png";
 import logo12 from "@/public/assets/images/client-logo/logo12.png";
+import vk from "@/public/assets/images/client-logo/vk.png";
+import kp from "@/public/assets/images/client-logo/kappy.png";
+import dz from "@/public/assets/images/client-logo/dreamzone.png";
+import s from "@/public/assets/images/client-logo/sisy.jpeg";
 
 
 const DEFAULT_LOGOS = [
@@ -27,6 +31,10 @@ const DEFAULT_LOGOS = [
   { src: logo10, alt: "Client 10 logo" },
   { src: logo11, alt: "Client 11 logo" },
   { src: logo12, alt: "Client 12 logo" },
+  { src: vk, alt: "VK logo" },
+  { src: kp, alt: "Kappy logo" },
+  { src: dz, alt: "Dreamzone logo" },
+  { src: s, alt: "S logo" },
 
 ];
 

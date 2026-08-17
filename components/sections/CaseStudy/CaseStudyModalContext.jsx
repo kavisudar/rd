@@ -24,6 +24,15 @@ export function CaseStudyModalProvider({ children }) {
     window.history.pushState({ caseStudyModal: true, slug: nextSlug }, "", `/case-studies/${nextSlug}`);
   }, []);
 
+  // Used by Next/Previous project inside an already-open modal: replaces the
+  // current history entry instead of pushing a new one, so the back button
+  // (and the close button's history.back()) returns straight to the page the
+  // modal was opened from, no matter how many projects were browsed.
+  const navigate = useCallback((nextSlug) => {
+    setSlug(nextSlug);
+    window.history.replaceState({ caseStudyModal: true, slug: nextSlug }, "", `/case-studies/${nextSlug}`);
+  }, []);
+
   const close = useCallback(() => {
     if (window.history.state?.caseStudyModal) {
       window.history.back();
@@ -41,7 +50,7 @@ export function CaseStudyModalProvider({ children }) {
   }, []);
 
   return (
-    <CaseStudyModalContext.Provider value={{ slug, open, close }}>
+    <CaseStudyModalContext.Provider value={{ slug, open, navigate, close }}>
       {children}
     </CaseStudyModalContext.Provider>
   );

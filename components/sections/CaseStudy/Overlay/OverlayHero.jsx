@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import DeviceShowcase from "../DeviceShowcase";
 
 export default function OverlayHero({ caseStudy }) {
-  const { companyName, projectTitle, industry, year, screenshot, website, logo } = caseStudy;
+  const { companyName, projectTitle, industry, year, screenshot, deviceMockup, website, logo } = caseStudy;
 
   return (
     <section className="flex flex-col gap-6 px-5 pb-6 pt-6 sm:gap-7 sm:px-6 sm:pb-8 sm:pt-8 lg:flex-row lg:items-center lg:gap-10 lg:px-10 lg:py-10 xl:px-12">
@@ -46,7 +46,13 @@ export default function OverlayHero({ caseStudy }) {
       </div>
 
       <FadeIn direction="scale" delay={0.1} duration={0.7} className="w-full shrink-0 lg:w-[46%]">
-        <DeviceShowcase screenshot={screenshot} logo={logo} companyName={companyName} industry={industry} />
+        <DeviceShowcase
+          screenshot={screenshot}
+          mockupImage={deviceMockup}
+          logo={logo}
+          companyName={companyName}
+          industry={industry}
+        />
       </FadeIn>
     </section>
   );
