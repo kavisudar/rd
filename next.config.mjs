@@ -3,9 +3,14 @@ import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+
+  basePath: "/rd",
+  assetPrefix: "/rd/",
+
   turbopack: {
     root: import.meta.dirname,
   },
+
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -17,16 +22,14 @@ const nextConfig = {
   },
 };
 
-/**
- * Sentry has no DSN configured yet (see instrumentation.js /
- * instrumentation-client.js) - wrapping is still safe with no DSN set, the
- * SDK simply no-ops. Silent in dev, only uploads source maps when
- * SENTRY_AUTH_TOKEN is present (CI/production release builds).
- */
 export default withSentryConfig(nextConfig, {
   silent: true,
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
   widenClientFileUpload: true,
-  webpack: { treeshake: { removeDebugLogging: true } },
+  webpack: {
+    treeshake: {
+      removeDebugLogging: true,
+    },
+  },
 });
