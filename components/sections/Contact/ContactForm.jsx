@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Check, CheckCircle2, Loader2 } from "lucide-react";
-import company from "@/data/company.json";
+import { AlertCircle, Check, CheckCircle2, Loader2 } from "lucide-react";
 import Button from "@/components/ui/Button";
 import FormField from "./FormField";
+import { GOOGLE_SHEETS_URL } from "@/lib/site";
 
 const TRUST_ITEMS = ["Response within 24 Hours", "100% Confidential"];
 
@@ -55,7 +55,7 @@ export default function ContactForm() {
   const [form, setForm] = useState(INITIAL_FORM);
   const [touched, setTouched] = useState({});
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState("idle"); // idle | submitting | success
+  const [status, setStatus] = useState("idle"); // idle | submitting | success | error
 
   const handleChange = (name) => (event) => {
     const { value } = event.target;
@@ -77,8 +77,12 @@ export default function ContactForm() {
     setStatus("idle");
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
+    // Guards against a duplicate submission slipping in before the disabled
+    // button prop has re-rendered (e.g. an Enter-key double-fire).
+    if (status === "submitting") return;
 
     const nextErrors = Object.fromEntries(Object.keys(form).map((name) => [name, validateField(name, form[name])]));
     setErrors(nextErrors);
@@ -88,23 +92,35 @@ export default function ContactForm() {
 
     setStatus("submitting");
 
-    window.setTimeout(() => {
-      const fullName = `${form.firstName} ${form.lastName}`.trim();
-      const subject = encodeURIComponent(`New project enquiry from ${fullName || "your website"}`);
-      const bodyLines = [
-        `Name: ${fullName}`,
-        `Email: ${form.email}`,
-        `Phone: ${form.phone}`,
-        `Company: ${form.company}`,
-        form.website && `Website: ${form.website}`,
-        "",
-        "Project Description:",
-        form.description,
-      ].filter(Boolean);
-      const body = encodeURIComponent(bodyLines.join("\n"));
-      window.location.href = `mailto:${company.email}?subject=${subject}&body=${body}`;
+    try {
+      // No explicit Content-Type header on purpose: setting one (e.g.
+      // application/json) turns this into a CORS-preflighted request, which
+      // Google Apps Script Web Apps don't handle, so the request would fail
+      // before ever reaching doPost. Apps Script reads the raw body via
+      // e.postData.contents regardless of the declared content type.
+      const response = await fetch(GOOGLE_SHEETS_URL, {
+        method: "POST",
+        body: JSON.stringify({
+          firstName: form.firstName,
+          lastName: form.lastName,
+          email: form.email,
+          phone: form.phone,
+          companyName: form.company,
+          website: form.website,
+          description: form.description,
+        }),
+      });
+
+      const result = await response.json().catch(() => null);
+      if (!response.ok || result?.result === "error") {
+        throw new Error(result?.error || `Request failed with status ${response.status}`);
+      }
+
       setStatus("success");
-    }, 900);
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
+      setStatus("error");
+    }
   };
 
   if (status === "success") {
@@ -128,8 +144,7 @@ export default function ContactForm() {
         >
           <h3 className="font-display text-2xl text-ink sm:text-3xl">Message Sent!</h3>
           <p className="max-w-sm text-sm leading-relaxed text-text-secondary">
-            Thanks for reaching out — your email client should have opened with your message ready to send.
-            We&apos;ll get back to you within 24 hours.
+            Thank you! Your message has been submitted successfully. We&apos;ll get back to you soon.
           </p>
         </motion.div>
         <button
@@ -138,6 +153,41 @@ export default function ContactForm() {
           className="relative z-10 mt-2 text-xs font-medium uppercase tracking-widest text-gold transition-colors duration-300 ease-luxury hover:text-gold-light"
         >
           Send another inquiry
+        </button>
+      </div>
+    );
+  }
+
+  if (status === "error") {
+    return (
+      <div className="contact-form-card relative flex flex-col items-center gap-4 overflow-hidden px-8 py-16 text-center sm:px-10">
+        <span aria-hidden="true" className="aurora-blob -right-16 -top-16 h-56 w-56 bg-red-400/10" />
+        <span aria-hidden="true" className="aurora-blob -bottom-16 -left-16 h-56 w-56 bg-red-400/10" />
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 0.1, type: "spring", stiffness: 260, damping: 18 }}
+          className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-red-100 text-red-600"
+        >
+          <AlertCircle size={32} />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="relative z-10 flex flex-col gap-2"
+        >
+          <h3 className="font-display text-2xl text-ink sm:text-3xl">Something Went Wrong</h3>
+          <p className="max-w-sm text-sm leading-relaxed text-text-secondary">
+            Something went wrong while submitting your form. Please try again.
+          </p>
+        </motion.div>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="relative z-10 mt-2 text-xs font-medium uppercase tracking-widest text-gold transition-colors duration-300 ease-luxury hover:text-gold-light"
+        >
+          Back to form
         </button>
       </div>
     );
@@ -189,7 +239,7 @@ export default function ContactForm() {
             touched={touched.lastName}
             placeholder="Doe"
             autoComplete="family-name"
-            required
+            
           />
         </motion.div>
 

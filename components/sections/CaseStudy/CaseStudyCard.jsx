@@ -2,39 +2,39 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import PortfolioImage from "@/components/ui/PortfolioImage";
+import VisualFallback from "./VisualFallback";
 
-export default function CaseStudyCard({ caseStudy, onOpen }) {
-  const { companyName, industry, projectTitle, website, logo, screenshot, featured } = caseStudy;
+const MotionLink = motion.create(Link);
+
+export default function CaseStudyCard({ caseStudy }) {
+  const { companyName, industry, projectTitle, slug, website, logo, screenshot, featured } = caseStudy;
 
   return (
-    <motion.div
-      role="button"
-      tabIndex={0}
+    <MotionLink
+      href={`/case-studies/${slug}`}
       layout
       initial={{ opacity: 0, y: 32 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 32 }}
       transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      onClick={() => onOpen(caseStudy)}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          onOpen(caseStudy);
-        }
-      }}
       aria-label={`View case study: ${projectTitle}`}
       className="group glass relative flex h-135 w-full cursor-pointer flex-col overflow-hidden rounded-[28px] text-left transition-all duration-500 ease-luxury hover:-translate-y-2 hover:border-gold/50 hover:shadow-[0_24px_60px_-20px_rgba(124,58,237,0.35)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
     >
       <div className="relative h-[70%] min-h-70 w-full shrink-0">
         <div className="absolute inset-0 overflow-hidden">
-          <PortfolioImage
-            src={screenshot}
-            alt={`${companyName} website preview`}
-            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover transition-transform duration-700 ease-luxury group-hover:scale-110"
-          />
+          {screenshot ? (
+            <PortfolioImage
+              src={screenshot}
+              alt={`${companyName} website preview`}
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform duration-700 ease-luxury group-hover:scale-110"
+            />
+          ) : (
+            <VisualFallback logo={logo} companyName={companyName} industry={industry} />
+          )}
           <div className="absolute inset-0 bg-linear-to-b from-black/5 via-black/10 to-card" />
         </div>
 
@@ -45,11 +45,13 @@ export default function CaseStudyCard({ caseStudy, onOpen }) {
           </span>
         )}
 
-        <div className="absolute -bottom-6 left-6 z-10 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-bg p-2 shadow-lg">
-          <div className="relative h-full w-full">
-            <Image src={logo} alt={`${companyName} logo`} fill sizes="56px" className="object-contain" />
+        {screenshot && (
+          <div className="absolute -bottom-6 left-6 z-10 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-bg p-2 shadow-lg">
+            <div className="relative h-full w-full">
+              <Image src={logo} alt={`${companyName} logo`} fill sizes="56px" className="object-contain" />
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div className="flex flex-1 flex-col gap-2 px-6 pb-5 pt-8">
@@ -66,15 +68,17 @@ export default function CaseStudyCard({ caseStudy, onOpen }) {
 
         <div className="mt-auto flex items-center justify-between border-t border-border/60 pt-3">
           {website ? (
-            <a
-              href={website}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
+            <button
+              type="button"
+              onClick={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                window.open(website, "_blank", "noopener,noreferrer");
+              }}
               className="relative z-10 text-xs font-medium uppercase tracking-widest text-text-muted transition-colors duration-300 ease-luxury hover:text-gold"
             >
               Live Website ↗
-            </a>
+            </button>
           ) : (
             <span />
           )}
@@ -89,6 +93,6 @@ export default function CaseStudyCard({ caseStudy, onOpen }) {
       </div>
 
       <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-gold/[0.07] via-transparent to-transparent opacity-0 transition-opacity duration-500 ease-luxury group-hover:opacity-100" />
-    </motion.div>
+    </MotionLink>
   );
 }

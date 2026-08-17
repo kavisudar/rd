@@ -36,7 +36,7 @@ export default function FormSelect({
           aria-required={required}
           aria-invalid={showError}
           aria-describedby={showError ? `${id}-error` : undefined}
-          className={`w-full appearance-none rounded-[16px] border bg-[#fbfaf8] px-4 py-2.5 pr-10 text-sm outline-none transition-[border-color,box-shadow,background-color] duration-300 ease-luxury ${
+          className={`w-full appearance-none rounded-2xl border bg-[#fbfaf8] px-4 py-2.5 pr-10 text-sm outline-none transition-[border-color,box-shadow,background-color] duration-300 ease-luxury ${
             value ? "text-ink" : "text-text-muted/70"
           } ${
             showError

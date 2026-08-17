@@ -1,6 +1,5 @@
-import company from "@/data/company.json";
 import { stats } from "@/data/stats.json";
-import HeroScene from "@/components/three/HeroScene";
+import HeroVisual from "./HeroVisual";
 import ScrollCue from "./ScrollCue";
 import RevealText from "@/components/animations/RevealText";
 import FadeIn from "@/components/animations/FadeIn";
@@ -10,56 +9,68 @@ import ContactCTA from "./ContactCTA";
 
 const HERO_STATS = stats.slice(0, 3);
 
+const HEADLINE_SEGMENTS = [
+  { text: "From this room", className: "block text-ink" },
+  { text: "to brands people remember.", className: "block text-brand-gold-shine", shine: true },
+];
+
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-screen w-full overflow-hidden bg-bg">
-      <div className="absolute inset-0">
-        <HeroScene />
-      </div>
-      <div className="absolute inset-0 bg-linear-to-t from-bg via-bg/10 to-transparent" />
-      <div className="absolute inset-0 bg-linear-to-r from-bg/70 via-transparent to-transparent" />
+    <section id="hero" className="relative min-h-svh w-full overflow-hidden bg-bg">
+      <div className="relative z-10 mx-auto flex min-h-svh w-full max-w-[1600px] flex-col justify-between px-6 pb-6 pt-20 sm:px-8 lg:px-12 lg:pb-6 lg:pt-24">
+        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-12 lg:grid-rows-2 lg:items-stretch lg:gap-x-10 lg:gap-y-4 xl:gap-x-16">
+          <div className="flex flex-col gap-4 lg:col-span-6 lg:row-start-1 lg:self-start lg:pt-2">
+            <FadeIn direction="none" duration={0.6}>
+              <span className="text-[0.9375rem] font-semibold uppercase tracking-widest text-brand-gold">
+                Chennai, India — Creative Digital Partner
+              </span>
+            </FadeIn>
 
-      <div className="relative z-10 flex h-full flex-col justify-end px-6 pb-10 pt-32 sm:px-8 lg:px-12">
-        <div className="flex max-w-3xl flex-col gap-6">
-          <FadeIn direction="none" duration={0.6}>
-            <span className="text-[0.9375rem] font-semibold uppercase tracking-widest text-brand-gold">
-              Web Design · Development · Digital Marketing
-            </span>
-          </FadeIn>
+            <RevealText
+              as="h1"
+              segments={HEADLINE_SEGMENTS}
+              delay={0.15}
+              stagger={0.05}
+              className="font-display text-4xl font-semibold uppercase leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl 2xl:text-7xl"
+            />
+          </div>
 
-          <RevealText
-            as="h1"
-            text={company.tagline}
-            delay={0.15}
-            stagger={0.05}
-            className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl xl:text-8xl"
-          />
-
-          <FadeIn delay={0.7} className="max-w-lg text-base leading-relaxed text-text-secondary sm:text-lg">
-            <p>{company.description}</p>
-          </FadeIn>
-
-          <FadeIn delay={0.9}>
-            <div className="mt-2 flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:items-end sm:gap-6">
-              <Button href="#portfolio" variant="outline" className="text-ink">
-                View Our Work
-              </Button>
-
-              <div className="sm:border-l sm:border-border sm:pl-6">
-                <ContactCTA />
-              </div>
+          <div className="lg:col-span-6 lg:col-start-7 lg:row-start-1 lg:row-span-2">
+            <div className="relative aspect-[4/3] w-full sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[20rem]">
+              <HeroVisual />
             </div>
-          </FadeIn>
+          </div>
+
+          <div className="flex flex-col gap-4 lg:col-span-6 lg:row-start-2 lg:self-end">
+            <FadeIn delay={0.6} className="max-w-md text-base leading-relaxed text-text-secondary sm:text-lg">
+              <p>
+                One Chennai studio, 15 years in, and a team that turns ideas into websites and brand
+                systems that actually move the needle.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.85}>
+              <div className="flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:items-end sm:gap-6">
+                <Button href="#portfolio" variant="solid">
+                  Explore Our Work
+                </Button>
+
+                <div className="sm:border-l sm:border-border sm:pl-6">
+                  <ContactCTA />
+                </div>
+              </div>
+            </FadeIn>
+          </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-8 border-t border-border pt-6 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mt-5 flex flex-col gap-6 border-t border-border pt-4 sm:flex-row sm:items-end sm:justify-between lg:mt-6">
           <ScrollCue />
 
           <div className="flex items-center gap-8">
             {HERO_STATS.map((stat, i) => (
               <FadeIn
                 key={stat.id}
-                delay={1 + i * 0.1}
+                delay={1.1 + i * 0.1}
                 className="flex flex-col gap-1 border-l border-border pl-6 first:border-l-0 first:pl-0"
               >
                 <span className="font-display text-3xl text-gradient sm:text-4xl">

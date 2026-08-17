@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "slug": "Interior Design",
+    "slug": "orange-interior",
     "companyName": "Orange Interior",
     "industry": "Interior Design",
     "category": "Web Design",
@@ -23,7 +23,7 @@
       { "title": "Optimize", "description": "We continuously analyzed campaign performance and user responses to improve lead quality, reach, and overall digital performance." }
     ],
     "solution": "We delivered a complete end-to-end digital transformation for Orange Interior. Instead of treating branding, website development, and advertising as separate services, we built them as one connected growth system: Brand Identity → Website → Digital Marketing → Lead Generation. We created a professional brand identity that established trust, developed a website that communicated their expertise and showcased their work, and implemented digital advertising strategies to bring their services in front of the right audience. This transformed Orange Interior's digital presence from a basic business presence into a lead-generating brand designed for continuous growth.",
-    "solutionImage": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1400&q=80",
+    "solutionImage": "/assets/images/client/c8.png",
     "results": [
       { "value": 7, "prefix": "", "suffix": "+", "label": "Years of Industry Experience" },
       { "value": 2000, "prefix": "", "suffix": "+", "label": "Commercial Interior Projects & Opportunities" },
@@ -31,13 +31,8 @@
       { "value": 3, "prefix": "", "suffix": "", "label": "Integrated Pillars: Branding, Website & Marketing" }
     ],
     "services": ["Logo Design", "Brand Identity & Branding", "Website Design & Development", "Digital Marketing", "Paid Advertising", "Lead Generation Strategy", "Creative & Campaign Design", "Digital Brand Positioning"],
-    "screenshot": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1200&q=80"
-    ],
+    "screenshot": "/assets/images/client/c8.png",
+    "gallery": [],
     "website": "https://www.orangeinterior.in/chennai",
     "logo": "/assets/images/client-logo/logo2.png",
     "featured": true,
@@ -67,7 +62,7 @@
       { "title": "Optimize & Scale", "description": "Continuously monitor campaign performance, identify winning audiences and campaigns, reduce ineffective spending, and scale the strategies that generate better results." }
     ],
     "solution": "We implemented a performance marketing ecosystem combining Meta Ads and Google Ads. Meta Ads helped us reach potential students based on their interests, behaviours, and demographics, while Google Ads allowed us to capture users actively searching for design courses and related career opportunities. The campaigns were continuously optimized based on performance data, allowing us to identify which audiences, creatives, keywords, and campaigns were producing the strongest lead flow. The result was a shift from little to no consistent lead generation to a structured advertising system generating 7+ leads every day.",
-    "solutionImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=80",
+    "solutionImage": "/assets/images/client/dreamzone.png",
     "results": [
       { "value": 7, "prefix": "", "suffix": "+", "label": "Leads / Day" },
       { "value": 2, "prefix": "", "suffix": "X", "label": "Ad Channels (Meta + Google)" },
@@ -75,13 +70,8 @@
       { "value": 1, "prefix": "", "suffix": "", "label": "Continuous, Scalable Lead-Generation System" }
     ],
     "services": ["Meta Ads", "Google Ads", "Performance Marketing", "Lead Generation", "Audience Research", "Campaign Strategy", "Ad Creative Strategy", "Campaign Optimization", "Conversion-Focused Advertising"],
-    "screenshot": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-      "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80"
-    ],
+    "screenshot": "/assets/images/client/dreamzone.png",
+    "gallery": [],
     "website": "https://www.dreamzonetambaram.com/",
     "logo": "/assets/images/client-logo/logo8.png",
     "featured": false,
@@ -111,7 +101,7 @@
       { "title": "Improve & Optimize", "description": "Focus on improving the overall digital communication and creating a stronger foundation for consistent audience engagement and lead generation." }
     ],
     "solution": "We helped Stira Pathways move from limited digital communication to a more professional and engaging brand presence. A key part of the solution was professional video production. Through strategic planning, on-site video shooting, and content development, we created visual assets that helped communicate the firm's expertise, professionalism, and approach. The content was designed around the core brand message: Professional Advisory. Clarity. Integrity. Instead of relying only on written descriptions of their services, we helped bring the brand to life through authentic, professional visual storytelling.",
-    "solutionImage": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=1400&q=80",
+    "solutionImage": "/assets/images/client/stira.png",
     "results": [
       { "value": 0, "prefix": "", "suffix": " → Improved Lead Generation", "label": "Digital Leads Before Launch" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Stronger, More Professional Brand Presence" },
@@ -119,13 +109,8 @@
       { "value": 1, "prefix": "", "suffix": "", "label": "Improved Audience Engagement & Communication" }
     ],
     "services": ["Video Production", "Professional Video Shoot", "Content Strategy", "Brand Communication", "Digital Content Creation", "Creative Direction", "Digital Marketing", "Lead Generation Strategy"],
-    "screenshot": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80",
-      "https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=1200&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1200&q=80"
-    ],
+    "screenshot": "/assets/images/client/stira.png",
+    "gallery": [],
     "website": "https://stirapathways.com/",
     "logo": "/assets/images/client-logo/logo9.png",
     "featured": false,
@@ -156,7 +141,7 @@
       { "title": "Brand Protection", "description": "We supported the business with trademark registration guidance, helping establish a stronger foundation for protecting the brand as it moves forward." }
     ],
     "solution": "Instead of treating Tunic Fashion's challenges as individual branding or marketing problems, we approached the business restart as a complete transformation. We combined strategic business guidance, branding, content production, website development, and trademark support into one connected solution. The new logo established a stronger visual identity, while professional video content and scripted brand communication helped bring the brand to life. The website created a central digital touchpoint for customers, while trademark support provided an additional layer of brand protection. Together, these services gave Tunic Fashion the foundation needed to restart the business with greater clarity, stronger positioning, and a more professional market presence.",
-    "solutionImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=80",
+    "solutionImage": null,
     "results": [
       { "value": 1, "prefix": "", "suffix": "", "label": "Business Restarted With a Clear Strategic Direction" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Complete Brand Identity: Logo & Visual Foundation" },
@@ -164,14 +149,9 @@
       { "value": 1, "prefix": "", "suffix": "", "label": "Trademark Support & Branding Infrastructure Established" }
     ],
     "services": ["Business Growth Guidance", "Brand Strategy", "Logo Design", "Brand Identity Development", "Script Writing", "Professional Video Shoot", "Video Content Production", "Website Design & Development", "Digital Presence Development", "Trademark Registration Support", "Marketing Content Strategy", "Business Restart Consultation"],
-    "screenshot": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80",
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1200&q=80"
-    ],
-    "website": "https://tunic-fashion.example.com",
+    "screenshot": null,
+    "gallery": [],
+    "website": null,
     "logo": "/assets/images/client-logo/logo10.png",
     "featured": false,
     "year": "2026"
@@ -201,7 +181,7 @@
       { "title": "Performance Marketing", "description": "We implemented Meta and Google advertising campaigns to increase brand visibility and connect the company's projects with relevant potential customers." }
     ],
     "solution": "We built a complete digital brand ecosystem for Sri Krish Mirra Builders. The foundation started with a professional brand identity and logo that established a consistent visual language. We then translated that identity into a modern website, project-focused video content, social media creatives, and promotional posters. To extend the brand's reach, we implemented Meta and Google Ads, helping the company promote its projects and reach audiences interested in construction, homes, apartments, and real estate opportunities. The entire system was designed around one central brand message: Building Dreams. Preserving Nature. This allowed Sri Krish Mirra Builders to communicate not only what they build, but also what they stand for.",
-    "solutionImage": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1400&q=80",
+    "solutionImage": null,
     "results": [
       { "value": 1, "prefix": "", "suffix": "", "label": "Complete Brand Identity Across All Channels" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Dedicated Website Showcasing Projects & Vision" },
@@ -209,13 +189,8 @@
       { "value": 2, "prefix": "", "suffix": "", "label": "Ad Channels: Meta Ads & Google Ads" }
     ],
     "services": ["Complete Branding", "Logo Design", "Brand Identity", "Website Design & Development", "Professional Video Shoot", "Video Content Production", "Meta Ads", "Google Ads", "Social Media Management", "Social Media Creatives", "Poster Design", "Marketing Content", "Digital Brand Strategy"],
-    "screenshot": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1200&q=80",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80"
-    ],
+    "screenshot": null,
+    "gallery": [],
     "website": "https://srikrishmirrabuilders.com/",
     "logo": "/assets/images/client-logo/logo11.png",
     "featured": false,
@@ -246,7 +221,7 @@
       { "title": "Amazon Marketing", "description": "We implemented Amazon-focused marketing activities to improve product visibility and help connect the product range with relevant customers." }
     ],
     "solution": "We created a complete Amazon product presentation and marketing ecosystem for Suganj Eco Chemicals. The solution combined professional product photography, Amazon listing development, A+ content, poster design, label design, and marketplace marketing. Instead of presenting the products as simple catalogue items, we focused on creating a more structured visual experience that clearly communicates what the product is, what it does, where it can be used, and why customers should consider it. The result was a more professional and consistent digital presentation of Suganj Eco Chemicals' product portfolio across Amazon and supporting marketing channels.",
-    "solutionImage": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1400&q=80",
+    "solutionImage": null,
     "results": [
       { "value": 1, "prefix": "", "suffix": "", "label": "Professional, Structured Amazon Product Presence" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Professional Product Photography & A+ Visuals" },
@@ -254,13 +229,8 @@
       { "value": 1, "prefix": "", "suffix": "", "label": "Integrated Amazon Listing, Creative & Marketing System" }
     ],
     "services": ["Amazon Product Listing", "Amazon Listing Optimization", "Amazon A+ Content", "A+ Product Photoshoot", "Product Photography", "Poster Design", "Product Label Design", "Marketing Creatives", "Amazon Marketing", "E-commerce Marketing", "Product Visual Communication"],
-    "screenshot": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1200&q=80",
-      "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80"
-    ],
+    "screenshot": null,
+    "gallery": [],
     "website": "https://suganj.com/",
     "logo": "/assets/images/client-logo/logo12.png",
     "featured": false,
@@ -291,7 +261,7 @@
       { "title": "Brand Integration", "description": "We brought the complete identity together across physical and digital touchpoints to create one consistent brand experience." }
     ],
     "solution": "We developed a complete corporate branding and digital identity system for Luna Wharf. The project started with the creation of a distinctive logo and evolved into a complete visual identity covering business cards, letter cards, envelopes, and other corporate communication materials. We then translated the brand identity into a professional website, creating a consistent digital experience that reflects Luna Wharf's position as an import and export company. The result was a unified brand system where every touchpoint—from a business card handed to a potential partner to the company's website—communicates the same level of professionalism, trust, and global ambition.",
-    "solutionImage": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1400&q=80",
+    "solutionImage": null,
     "results": [
       { "value": 1, "prefix": "", "suffix": "", "label": "Complete, Recognizable Brand Identity" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Consistent Corporate Stationery: Cards, Letterheads & Envelopes" },
@@ -299,14 +269,9 @@
       { "value": 1, "prefix": "", "suffix": "", "label": "Unified Brand Experience Across Physical & Digital Touchpoints" }
     ],
     "services": ["Complete Branding", "Logo Design", "Brand Identity", "Business Card Design", "Letter Card / Letterhead Design", "Envelope Design", "Corporate Stationery", "Website Design & Development", "Digital Brand Identity", "Brand Communication"],
-    "screenshot": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=1200&q=80",
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80"
-    ],
-    "website": "https://lunawharf.example.com",
+    "screenshot": null,
+    "gallery": [],
+    "website": null,
     "logo": "/assets/images/client-logo/logo1.png",
     "featured": false,
     "year": "2026"
@@ -335,7 +300,7 @@
       { "title": "Digital Brand Integration", "description": "We ensured that the company's branding and business information remained consistent across its website and digital presence." }
     ],
     "solution": "We transformed FOMRA's established offline reputation into a stronger digital identity. The website was designed to communicate the company's 40+ years of experience, product expertise, locations, and commitment to quality and service. Alongside the website, we strengthened FOMRA's Google Business presence, giving potential customers a clear and accessible way to discover the company, understand its offering, and initiate contact. The overall digital experience was built around FOMRA's core message: Delivering Quality. Building Trust. This allowed the company to carry the trust it had built over decades into the digital environment.",
-    "solutionImage": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1400&q=80",
+    "solutionImage": null,
     "results": [
       { "value": 40, "prefix": "", "suffix": "+", "label": "Years of Industry Experience" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Professional Website Showcasing Products & Locations" },
@@ -343,13 +308,8 @@
       { "value": 1, "prefix": "", "suffix": "", "label": "Consistent Brand Presence Across Digital Touchpoints" }
     ],
     "services": ["Brand Development", "Branding", "Website Design & Development", "Google Business Profile Setup", "Google Business Optimization", "Digital Presence Development", "Brand Communication", "Corporate Digital Identity"],
-    "screenshot": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1200&q=80",
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
-    ],
+    "screenshot": null,
+    "gallery": [],
     "website": "https://fomraindustrialsuppliers.com/",
     "logo": "/assets/images/client-logo/logo3.png",
     "featured": false,
@@ -380,7 +340,7 @@
       { "title": "Testing & Optimization", "description": "We tested the website across major browsers and screen sizes, ensuring a responsive, functional, and consistent user experience." }
     ],
     "solution": "We delivered a complete website and creative content ecosystem for Everbright Enterprises. The core of the solution was a dynamic business website designed to provide the company with a professional online presence while giving the client greater control over their content. The website included structured business information, product/service presentation, gallery sections, contact functionality, social media integration, basic SEO configuration, analytics integration, and responsive design. To complement the website, we created a complete content package consisting of 25 edited photos, 1 promotional video, 5 reels, and 5 posters. This allowed Everbright Enterprises to maintain a consistent visual identity across its website and marketing channels.",
-    "solutionImage": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1400&q=80",
+    "solutionImage": "/assets/images/client/everbright.png",
     "results": [
       { "value": 1, "prefix": "", "suffix": "", "label": "Complete Dynamic CMS Website" },
       { "value": 25, "prefix": "", "suffix": "", "label": "Professional Edited Photographs" },
@@ -388,13 +348,8 @@
       { "value": 10, "prefix": "", "suffix": "", "label": "Marketing Creatives (5 Reels + 5 Posters)" }
     ],
     "services": ["Dynamic Website Design & Development", "CMS Integration", "Responsive Web Design", "Contact Form Integration", "Gallery Integration", "Basic SEO Setup", "Google Analytics / Search Console Setup", "Social Media Integration", "SSL & Basic Security Setup", "Cross-Browser Testing", "Photo Editing", "Promotional Video Editing", "Short-Form Reels", "Poster Design", "Creative Content Development", "Marketing Asset Preparation"],
-    "screenshot": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80",
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80",
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=1200&q=80",
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80"
-    ],
+    "screenshot": "/assets/images/client/everbright.png",
+    "gallery": [],
     "website": "https://everbrightenterprises.example.com",
     "logo": "/assets/images/client-logo/logo4.png",
     "featured": false,
@@ -425,7 +380,7 @@
       { "title": "Optimize & Improve", "description": "We monitored the digital performance and refined the advertising approach to improve audience reach and e-commerce opportunities." }
     ],
     "solution": "We built a complete digital commerce experience for SISY, combining an elegant e-commerce website with digital advertising. The website was designed to reflect the brand's core philosophy—traditional craftsmanship with a modern perspective. From discovering a collection to exploring individual sarees and making a purchase, the experience was designed to feel simple, premium, and aligned with SISY's identity. The brand story was also incorporated into the digital experience, allowing customers to understand that SISY is not simply selling sarees—it is celebrating the stories, memories, confidence, and individuality associated with wearing them. Alongside the e-commerce platform, targeted advertising helped bring SISY's products to relevant audiences and create a stronger digital sales channel.",
-    "solutionImage": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1400&q=80",
+    "solutionImage": "/assets/images/client/sisy.png",
     "results": [
       { "value": 1, "prefix": "", "suffix": "", "label": "Premium E-Commerce Platform for Saree Collections" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Brand Story Translated Into a Modern Digital Experience" },
@@ -433,13 +388,8 @@
       { "value": 1, "prefix": "", "suffix": "", "label": "Increased Digital Reach Through Targeted Advertising" }
     ],
     "services": ["E-Commerce Website Design", "E-Commerce Website Development", "Responsive Web Design", "Product Catalogue Integration", "Online Shopping Experience", "Digital Advertising", "Performance Marketing", "Audience Targeting", "Campaign Optimization", "E-Commerce Marketing"],
-    "screenshot": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=1600&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=1200&q=80",
-      "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&q=80",
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80"
-    ],
+    "screenshot": "/assets/images/client/sisy.png",
+    "gallery": [],
     "website": "https://www.silkinsixyards.com/",
     "logo": "/assets/images/client-logo/logo5.png",
     "featured": false,

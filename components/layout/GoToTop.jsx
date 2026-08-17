@@ -38,11 +38,11 @@ export default function GoToTop() {
           exit={{ opacity: 0, scale: 0.85, y: 12 }}
           transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
           style={{ position: "fixed", zIndex: 40 }}
-          className="group glass bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full transition-all duration-300 ease-luxury hover:-translate-y-0.5 hover:scale-105 hover:border-brand-gold/50 hover:bg-white/70 hover:shadow-[0_10px_28px_rgba(201,161,74,0.32)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60 focus-visible:ring-offset-2 focus-visible:ring-offset-bg sm:bottom-8 sm:right-8"
+          className="group bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full bg-linear-to-r from-gold via-gold to-gold-light shadow-[0_8px_24px_rgba(79,70,229,0.32)] transition-all duration-300 ease-luxury hover:-translate-y-0.5 hover:scale-105 hover:shadow-[0_12px_32px_rgba(124,58,237,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60 focus-visible:ring-offset-2 focus-visible:ring-offset-bg sm:bottom-8 sm:right-8"
         >
           <ArrowUp
             size={20}
-            className="text-brand-gold transition-transform duration-300 ease-luxury group-hover:-translate-y-1"
+            className="text-white transition-transform duration-300 ease-luxury group-hover:-translate-y-1"
           />
 
           <span

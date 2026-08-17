@@ -11,9 +11,9 @@ const CONTACT_CHANNELS = [
     icon: LifeBuoy,
   },
   {
-    label: "Sales Inbox",
-    value: "ragadesigners.sales@gmail.com",
-    href: "mailto:ragadesigners.sales@gmail.com",
+    label: "CEO Executive Office",
+    value: "shreeragadesigners@gmail.com",
+    href: "mailto:shreeragadesigners@gmail.com",
     icon: Handshake,
   },
   {

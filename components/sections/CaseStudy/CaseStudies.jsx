@@ -7,7 +7,6 @@ import FadeIn from "@/components/animations/FadeIn";
 import RevealText from "@/components/animations/RevealText";
 import FilterBar, { ALL } from "./FilterBar";
 import CaseStudyCard from "./CaseStudyCard";
-import CaseStudyModal from "./CaseStudyModal";
 
 const INITIAL_VISIBLE = 3;
 
@@ -18,7 +17,6 @@ export default function CaseStudies() {
   );
 
   const [active, setActive] = useState(ALL);
-  const [selected, setSelected] = useState(null);
   const [showAll, setShowAll] = useState(false);
 
   const filtered = useMemo(
@@ -65,7 +63,7 @@ export default function CaseStudies() {
         <div className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {visible.map((caseStudy) => (
-              <CaseStudyCard key={caseStudy.id} caseStudy={caseStudy} onOpen={setSelected} />
+              <CaseStudyCard key={caseStudy.id} caseStudy={caseStudy} />
             ))}
           </AnimatePresence>
         </div>
@@ -82,8 +80,6 @@ export default function CaseStudies() {
           </FadeIn>
         )}
       </div>
-
-      <CaseStudyModal caseStudy={selected} onClose={() => setSelected(null)} />
     </section>
   );
 }

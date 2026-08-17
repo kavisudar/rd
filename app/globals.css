@@ -111,9 +111,14 @@ body::after {
   box-shadow: inset 0 0 min(22vw, 280px) rgba(79, 70, 229, 0.05);
 }
 
+/*
+ * isolation (not position:relative) so this doesn't clobber position:fixed
+ * on direct children like the site header - isolation alone establishes the
+ * stacking context we need above body::before/::after without touching the
+ * positioning scheme.
+ */
 body > * {
-  position: relative;
-  z-index: 1;
+  isolation: isolate;
 }
 
 ::selection {

@@ -42,7 +42,7 @@ export default function FormField({
           aria-required={required}
           aria-invalid={showError}
           aria-describedby={showError ? `${id}-error` : undefined}
-          className={`w-full rounded-[16px] border bg-[#fbfaf8] px-4 py-2.5 text-sm text-ink outline-none transition-[border-color,box-shadow,background-color] duration-300 ease-luxury placeholder:text-text-muted/70 ${
+          className={`w-full rounded-2xl border bg-[#fbfaf8] px-4 py-2.5 text-sm text-ink outline-none transition-[border-color,box-shadow,background-color] duration-300 ease-luxury placeholder:text-text-muted/70 ${
             showValid ? "pr-11" : ""
           } ${
             showError

@@ -67,7 +67,7 @@ export default function Footer() {
               <a href={`tel:${company.phone}`} className="transition-colors duration-300 ease-luxury hover:text-gold">
                 {company.phone}
               </a>
-              <p className="max-w-[220px] text-text-muted">{company.address}</p>
+              <p className="max-w-55 text-text-muted">{company.address}</p>
               <p className="text-text-muted">{company.hours}</p>
             </div>
           </div>

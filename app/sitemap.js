@@ -1,3 +1,4 @@
+import caseStudies from "@/data/caseStudies.json";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap() {
@@ -8,5 +9,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 1,
     },
+    ...caseStudies.map((caseStudy) => ({
+      url: `${SITE_URL}/case-studies/${caseStudy.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    })),
   ];
 }

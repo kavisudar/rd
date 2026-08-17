@@ -1,17 +1,17 @@
 {
   "name": "Raga Designers",
   "shortName": "Raga Designers",
-  "tagline": "Build Your Dream With Us",
+  "tagline": "From this room to brands people remember.",
   "description": "Raga Designers is a Chennai-based website designing and digital marketing agency crafting high-performance websites, e-commerce platforms, and brand experiences for clients across India and the global market.",
   "founded": "2011",
-  "email": "ragadesigners.sale@gmail.com",
+  "email": "shreeragadesigners@gmail.com",
   "phone": "+91 9962743888",
   "whatsapp": "919962856406",
   "address": "Suite B, First Floor, No. 14/28, Shanthi Nagar, Korattur, Tamil Nadu 600050",
  
   "socials": [
     { "platform": "Instagram", "url": "https://instagram.com/ragadesigners" },
-    { "platform": "LinkedIn", "url": "https://linkedin.com/in/ragadesigners" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/company/rdbytes/posts/?feedView=all" },
     { "platform": "Pinterest", "url": "https://pinterest.com/ragadesigners" },
     { "platform": "Facebook", "url": "https://facebook.com/ragadesigners" }
   ],
@@ -19,7 +19,7 @@
     { "label": "About", "href": "#about" },
     { "label": "Services", "href": "#services" },
     { "label": "Work", "href": "#portfolio" },
-    { "label": "Process", "href": "#process" },
-    { "label": "Contact", "href": "#contact" }
+    {"label":"Case Studies","href":"#case-studies"},
+    { "label": "Process", "href": "#process" }
   ]
 }
