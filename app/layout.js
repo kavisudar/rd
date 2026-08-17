@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import FloatingParticles from "@/components/layout/FloatingParticles";
 import GoToTop from "@/components/layout/GoToTop";
 import CaseStudyOverlay from "@/components/sections/CaseStudy/CaseStudyOverlay";
+import { CaseStudyModalProvider } from "@/components/sections/CaseStudy/CaseStudyModalContext";
 import company from "@/data/company.json";
 import { SITE_URL } from "@/lib/site";
 
@@ -54,7 +55,7 @@ const organizationJsonLd = {
   sameAs: company.socials.map((s) => s.url),
 };
 
-export default function RootLayout({ children, casestudy }) {
+export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
@@ -65,14 +66,16 @@ export default function RootLayout({ children, casestudy }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-        <FloatingParticles />
-        <SmoothScroll>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <GoToTop />
-          <CaseStudyOverlay>{casestudy}</CaseStudyOverlay>
-        </SmoothScroll>
+        <CaseStudyModalProvider>
+          <FloatingParticles />
+          <SmoothScroll>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <GoToTop />
+            <CaseStudyOverlay />
+          </SmoothScroll>
+        </CaseStudyModalProvider>
       </body>
     </html>
   );

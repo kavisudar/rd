@@ -2,10 +2,12 @@ import { withSentryConfig } from "@sentry/nextjs";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   turbopack: {
     root: import.meta.dirname,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

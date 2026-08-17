@@ -6,15 +6,26 @@ import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import PortfolioImage from "@/components/ui/PortfolioImage";
 import VisualFallback from "./VisualFallback";
+import { useCaseStudyModal } from "./CaseStudyModalContext";
 
 const MotionLink = motion.create(Link);
 
 export default function CaseStudyCard({ caseStudy }) {
   const { companyName, industry, projectTitle, slug, website, logo, screenshot, featured } = caseStudy;
+  const { open } = useCaseStudyModal();
 
   return (
     <MotionLink
       href={`/case-studies/${slug}`}
+      onClick={(event) => {
+        // Modifier/middle clicks fall through to the real href so opening in
+        // a new tab or window still works; a plain click opens the modal
+        // instead of navigating.
+        if (event.defaultPrevented || event.button !== 0) return;
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        open(slug);
+      }}
       layout
       initial={{ opacity: 0, y: 32 }}
       animate={{ opacity: 1, y: 0 }}

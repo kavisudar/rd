@@ -1,41 +1,42 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
+import caseStudies from "@/data/caseStudies.json";
 import { useLenis } from "@/lib/lenis-context";
+import { useCaseStudyModal } from "./CaseStudyModalContext";
+import CaseStudyOverlayContent from "@/components/sections/CaseStudy/Overlay/CaseStudyOverlayContent";
 import { ScrollContainerContext, FooterSlotContext } from "@/components/sections/CaseStudy/Overlay/scrollContext";
 
-export default function CaseStudyOverlay({ children }) {
-  const router = useRouter();
-  const pathname = usePathname();
+export default function CaseStudyOverlay() {
+  const { slug, close } = useCaseStudyModal();
   const lenis = useLenis();
   const scrollRef = useRef(null);
   const footerSlotRef = useRef(null);
-  const initialPathRef = useRef(pathname);
 
-  // Next passes the `@casestudy` slot as a React *element* reference (e.g.
-  // `<Default/>`), which is always a truthy object regardless of whether it
-  // renders to null - so open/closed can't be read off `children` itself.
-  // The interception only ever activates via a client-side transition, so a
-  // pathname that matches `/case-studies/[slug]` on the very first render
-  // means the real standalone page was hard-loaded there (overlay must stay
-  // closed); only a pathname that CHANGES into that shape after mount is a
-  // genuine soft-nav interception.
-  const isOpen = pathname.startsWith("/case-studies/") && pathname !== initialPathRef.current;
+  const isOpen = Boolean(slug);
 
-  const [cached, setCached] = useState(isOpen ? children : null);
-  const [cachedPath, setCachedPath] = useState(pathname);
+  const active = useMemo(() => {
+    if (!slug) return null;
+    const total = caseStudies.length;
+    const index = caseStudies.findIndex((cs) => cs.slug === slug);
+    if (index === -1) return null;
+
+    return {
+      caseStudy: caseStudies[index],
+      previousCaseStudy: total > 1 ? caseStudies[(index - 1 + total) % total] : null,
+      nextCaseStudy: total > 1 ? caseStudies[(index + 1) % total] : null,
+      index,
+      total,
+    };
+  }, [slug]);
+
+  const [cached, setCached] = useState(active);
 
   useEffect(() => {
-    if (isOpen) {
-      setCached(children);
-      setCachedPath(pathname);
-    }
-  }, [isOpen, children, pathname]);
-
-  const close = () => router.back();
+    if (active) setCached(active);
+  }, [active]);
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -57,7 +58,7 @@ export default function CaseStudyOverlay({ children }) {
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: 0 });
-  }, [cachedPath]);
+  }, [cached?.caseStudy?.slug]);
 
   return (
     <AnimatePresence onExitComplete={() => setCached(null)}>
@@ -113,15 +114,23 @@ export default function CaseStudyOverlay({ children }) {
                 <ScrollContainerContext.Provider value={scrollRef}>
                   <FooterSlotContext.Provider value={footerSlotRef}>
                     <AnimatePresence mode="wait">
-                      <motion.div
-                        key={cachedPath}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                      >
-                        {cached}
-                      </motion.div>
+                      {cached && (
+                        <motion.div
+                          key={cached.caseStudy.slug}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+                        >
+                          <CaseStudyOverlayContent
+                            caseStudy={cached.caseStudy}
+                            previousCaseStudy={cached.previousCaseStudy}
+                            nextCaseStudy={cached.nextCaseStudy}
+                            index={cached.index}
+                            total={cached.total}
+                          />
+                        </motion.div>
+                      )}
                     </AnimatePresence>
                   </FooterSlotContext.Provider>
                 </ScrollContainerContext.Provider>

@@ -1,6 +1,8 @@
 import caseStudies from "@/data/caseStudies.json";
 import { SITE_URL } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default function sitemap() {
   return [
     {
