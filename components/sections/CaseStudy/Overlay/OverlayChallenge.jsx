@@ -31,7 +31,7 @@ export default function OverlayChallenge({ caseStudy }) {
                 className="flex gap-4 border-t border-border/60 pt-3"
               >
                 <span className="font-display text-xs text-text-muted">{String(index + 1).padStart(2, "0")}</span>
-                <p className="text-sm leading-relaxed text-text-secondary">{point}</p>
+                <p className="text-base font-medium leading-relaxed text-black">{point}</p>
               </FadeIn>
             ))}
           </div>
@@ -55,7 +55,7 @@ export default function OverlayChallenge({ caseStudy }) {
                 className="flex items-start gap-3 rounded-xl border border-border bg-card/60 p-3.5"
               >
                 <Target className="mt-0.5 shrink-0 text-gold" size={16} strokeWidth={1.75} />
-                <span className="text-sm leading-relaxed text-text-secondary">{objective}</span>
+                <span className="text-base font-medium leading-relaxed text-black">{objective}</span>
               </FadeIn>
             ))}
           </div>

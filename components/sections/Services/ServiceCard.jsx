@@ -48,7 +48,7 @@ export default function ServiceCard({ service, index, className = "", style, ...
             <h3 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl lg:text-5xl text-balance">
               {title}
             </h3>
-            <p className="max-w-md text-sm leading-relaxed text-[#4b5563] sm:text-base">{subtitle}</p>
+            <p className="max-w-md text-base font-medium leading-relaxed text-black sm:text-lg">{subtitle}</p>
 
             <div className="flex flex-wrap gap-2 pt-1">
               {tags.map((tag) => (

@@ -42,7 +42,7 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col gap-4 lg:col-span-6 lg:row-start-2 lg:self-end">
-            <FadeIn delay={0.6} className="max-w-md text-base leading-relaxed text-text-secondary sm:text-lg">
+            <FadeIn delay={0.6} className="max-w-md text-lg font-medium leading-relaxed text-black sm:text-xl">
               <p>
                 One Chennai studio, 15 years in, and a team that turns ideas into websites and brand
                 systems that actually move the needle.

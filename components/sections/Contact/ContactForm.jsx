@@ -143,7 +143,7 @@ export default function ContactForm() {
           className="relative z-10 flex flex-col gap-2"
         >
           <h3 className="font-display text-2xl text-ink sm:text-3xl">Message Sent!</h3>
-          <p className="max-w-sm text-sm leading-relaxed text-text-secondary">
+          <p className="max-w-sm text-base font-medium leading-relaxed text-black">
             Thank you! Your message has been submitted successfully. We&apos;ll get back to you soon.
           </p>
         </motion.div>
@@ -178,7 +178,7 @@ export default function ContactForm() {
           className="relative z-10 flex flex-col gap-2"
         >
           <h3 className="font-display text-2xl text-ink sm:text-3xl">Something Went Wrong</h3>
-          <p className="max-w-sm text-sm leading-relaxed text-text-secondary">
+          <p className="max-w-sm text-base font-medium leading-relaxed text-black">
             Something went wrong while submitting your form. Please try again.
           </p>
         </motion.div>
@@ -210,7 +210,7 @@ export default function ContactForm() {
         <h3 className="font-display text-xl font-medium tracking-tight text-ink sm:text-2xl">
           Ready to Build Something Amazing?
         </h3>
-        <p className="text-sm leading-relaxed text-text-secondary">
+        <p className="text-base font-medium leading-relaxed text-black">
           Tell us about your project and our team will get back to you within 24 hours.
         </p>
       </motion.div>
@@ -375,7 +375,7 @@ export default function ContactForm() {
         <div className="border-t border-[#e9e3d6]/70 pt-2.5">
           <ul className="grid grid-cols-1 gap-x-6 gap-y-1.5 sm:grid-cols-2">
             {TRUST_ITEMS.map((label) => (
-              <li key={label} className="flex items-center gap-2.5 text-sm text-text-secondary">
+              <li key={label} className="flex items-center gap-2.5 text-base font-medium text-black">
                 <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
                   <Check size={12} strokeWidth={2.5} />
                 </span>

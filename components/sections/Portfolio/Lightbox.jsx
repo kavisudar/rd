@@ -58,7 +58,7 @@ export default function Lightbox({ project, onClose }) {
                 {project.category} · {project.location} · {project.year}
               </span>
               <h3 className="font-display text-3xl text-ink sm:text-4xl">{project.title}</h3>
-              <p className="text-sm leading-relaxed text-text-secondary sm:text-base">{project.description}</p>
+              <p className="text-base font-medium leading-relaxed text-black sm:text-lg">{project.description}</p>
 
               {project.liveUrl && (
                 <a

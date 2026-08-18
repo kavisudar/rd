@@ -69,7 +69,7 @@ export default function ServicesSection() {
 
           <p
             data-services-description
-            className="max-w-md text-base leading-relaxed text-text-secondary sm:text-lg"
+            className="max-w-md text-lg font-medium leading-relaxed text-black sm:text-xl"
           >
             From pixel-perfect interfaces to full-stack development and growth
             marketing — Raga Designers turns ideas into digital products that

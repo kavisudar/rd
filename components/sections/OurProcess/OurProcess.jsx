@@ -8,7 +8,7 @@ export default function OurProcess() {
       <div className="mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-12">
         <div className="flex flex-col items-center gap-6 text-center">
           <SectionHeading eyebrow="How We Work" title="Our Process" align="center" />
-          <p className="max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg">
+          <p className="max-w-2xl text-lg font-medium leading-relaxed text-black sm:text-xl">
             A connected journey from first conversation to long-term growth — every step builds on the last.
           </p>
         </div>

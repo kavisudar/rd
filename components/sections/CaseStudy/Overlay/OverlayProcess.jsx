@@ -31,7 +31,7 @@ export default function OverlayProcess({ caseStudy }) {
             </span>
             <div className="flex flex-col gap-1 pt-0.5">
               <h3 className="font-display text-base text-ink sm:text-lg">{step.title}</h3>
-              <p className="text-xs leading-relaxed text-text-secondary sm:text-sm">{step.description}</p>
+              <p className="text-sm font-medium leading-relaxed text-black sm:text-base">{step.description}</p>
             </div>
           </FadeIn>
         ))}

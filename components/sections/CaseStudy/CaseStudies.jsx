@@ -42,7 +42,7 @@ export default function CaseStudies() {
           />
 
           <FadeIn direction="up" delay={0.15} duration={0.7}>
-            <p className="max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg">
+            <p className="max-w-2xl text-lg font-medium leading-relaxed text-black sm:text-xl">
               Discover how we&apos;ve helped businesses achieve measurable results through design, development, and
               digital innovation.
             </p>

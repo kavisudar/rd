@@ -30,7 +30,7 @@ export default function ChallengeSection({ caseStudy }) {
                 className="flex gap-5 border-t border-border pt-5"
               >
                 <span className="font-display text-sm text-text-muted">{String(index + 1).padStart(2, "0")}</span>
-                <p className="text-base leading-relaxed text-text-secondary sm:text-lg">{point}</p>
+                <p className="text-lg font-medium leading-relaxed text-black sm:text-xl">{point}</p>
               </FadeIn>
             ))}
           </div>

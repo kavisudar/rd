@@ -41,7 +41,7 @@ export default function ProcessTimeline({ caseStudy }) {
                 </span>
                 <div className="flex flex-col gap-2">
                   <h3 className="font-display text-xl text-ink sm:text-2xl">{step.title}</h3>
-                  <p className="max-w-2xl text-sm leading-relaxed text-text-secondary sm:text-base">
+                  <p className="max-w-2xl text-base font-medium leading-relaxed text-black sm:text-lg">
                     {step.description}
                   </p>
                 </div>

@@ -22,7 +22,7 @@ export default function About() {
               className="font-display text-4xl font-medium leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
             />
 
-            <FadeIn delay={0.15} className="flex max-w-xl flex-col gap-4 text-base leading-relaxed text-text-secondary sm:text-lg">
+            <FadeIn delay={0.15} className="flex max-w-xl flex-col gap-4 text-lg font-medium leading-relaxed text-black sm:text-xl">
               <p>
                 Raga Designers is a leading web design and development company based in Chennai, with over 15
                 years of experience delivering innovative digital solutions to clients across India and more than

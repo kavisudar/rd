@@ -23,7 +23,7 @@ export default function Footer() {
               </div>
               <span className="text-sm font-medium uppercase tracking-[0.2em]">{company.shortName}</span>
             </div>
-            <p className="max-w-sm text-sm leading-relaxed text-text-secondary">{company.description}</p>
+            <p className="max-w-sm text-base font-medium leading-relaxed text-black">{company.description}</p>
             <div className="flex items-center gap-3">
               {company.socials.map((social) => {
                 const Icon = SOCIAL_ICONS[social.platform];

@@ -52,7 +52,7 @@ export default function ProcessNode({ step, align = "above" }) {
         <h3 className="font-display text-base text-ink transition-colors duration-300 ease-luxury group-hover:text-gold sm:text-lg lg:text-xl">
           {step.title}
         </h3>
-        <p className="mt-1.5 text-xs leading-relaxed text-text-secondary transition-colors duration-300 ease-luxury group-hover:text-ink/90 sm:text-sm">
+        <p className="mt-1.5 text-sm font-medium leading-relaxed text-black transition-colors duration-300 ease-luxury group-hover:text-ink/90 sm:text-base">
           {step.description}
         </p>
       </motion.div>

@@ -184,7 +184,7 @@
       { "title": "Performance Marketing", "description": "We implemented Meta and Google advertising campaigns to increase brand visibility and connect the company's projects with relevant potential customers." }
     ],
     "solution": "We built a complete digital brand ecosystem for Sri Krish Mirra Builders. The foundation started with a professional brand identity and logo that established a consistent visual language. We then translated that identity into a modern website, project-focused video content, social media creatives, and promotional posters. To extend the brand's reach, we implemented Meta and Google Ads, helping the company promote its projects and reach audiences interested in construction, homes, apartments, and real estate opportunities. The entire system was designed around one central brand message: Building Dreams. Preserving Nature. This allowed Sri Krish Mirra Builders to communicate not only what they build, but also what they stand for.",
-    "solutionImage": null,
+    "solutionImage": "/assets/images/case-logo/srikrishmeera.png",
     "results": [
       { "value": 1, "prefix": "", "suffix": "", "label": "Complete Brand Identity Across All Channels" },
       { "value": 1, "prefix": "", "suffix": "", "label": "Dedicated Website Showcasing Projects & Vision" },
@@ -193,7 +193,7 @@
     ],
     "services": ["Complete Branding", "Logo Design", "Brand Identity", "Website Design & Development", "Professional Video Shoot", "Video Content Production", "Meta Ads", "Google Ads", "Social Media Management", "Social Media Creatives", "Poster Design", "Marketing Content", "Digital Brand Strategy"],
     "screenshot": "/assets/images/case-logo/srikrishmeera.png",
-    "deviceMockup": "/assets/images/client/srikrishmeera.png",
+    "deviceMockup": "/assets/images/case-logo/srikrishmeera.png",
     "gallery": [],
     "website": "https://srikrishmirrabuilders.com/",
     "logo": "/assets/images/client-logo/srikrish.png",

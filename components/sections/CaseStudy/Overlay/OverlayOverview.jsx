@@ -15,7 +15,7 @@ export default function OverlayOverview({ caseStudy }) {
           </span>
         </FadeIn>
         <FadeIn direction="up" delay={0.05} duration={0.5}>
-          <p className="max-w-2xl text-sm leading-relaxed text-text-secondary sm:text-base">
+          <p className="max-w-2xl text-base font-medium leading-relaxed text-black sm:text-lg">
             {caseStudy.projectOverview}
           </p>
         </FadeIn>

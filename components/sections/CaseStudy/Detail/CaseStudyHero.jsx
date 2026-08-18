@@ -42,7 +42,7 @@ export default function CaseStudyHero({ caseStudy }) {
         />
 
         <FadeIn direction="up" delay={0.15} duration={0.7} className="max-w-2xl">
-          <p className="text-lg leading-relaxed text-white/80 sm:text-xl">{projectTitle}</p>
+          <p className="text-xl font-medium leading-relaxed text-white/80 sm:text-2xl">{projectTitle}</p>
         </FadeIn>
 
         <FadeIn direction="up" delay={0.25} duration={0.7} className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-2">

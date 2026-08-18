@@ -65,7 +65,7 @@ export default function Contact() {
               text="Let's Build Your Dream"
               className="font-display text-4xl font-medium leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-6xl"
             />
-            <FadeIn delay={0.2} className="max-w-md text-base leading-relaxed text-text-secondary">
+            <FadeIn delay={0.2} className="max-w-md text-lg font-medium leading-relaxed text-black">
               <p>
                 Tell us about your project — website, e-commerce store, or digital marketing goals — and we&apos;ll
                 get back to you within one business day.

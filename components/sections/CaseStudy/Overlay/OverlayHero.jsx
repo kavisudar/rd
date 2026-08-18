@@ -22,7 +22,7 @@ export default function OverlayHero({ caseStudy }) {
         </h1>
 
         <FadeIn direction="up" delay={0.1} duration={0.5}>
-          <p className="max-w-md text-base leading-relaxed text-text-secondary sm:text-lg">{projectTitle}</p>
+          <p className="max-w-md text-lg font-medium leading-relaxed text-black sm:text-xl">{projectTitle}</p>
         </FadeIn>
 
         <FadeIn direction="up" delay={0.15} duration={0.5} className="flex flex-wrap items-center gap-2.5">
