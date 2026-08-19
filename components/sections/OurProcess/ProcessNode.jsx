@@ -31,7 +31,7 @@ export default function ProcessNode({ step, align = "above" }) {
     <div className="group relative">
       <motion.div
         variants={circleVariants}
-        className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-white/70 text-gold shadow-[0_0_20px_rgba(79,70,229,0.25)] backdrop-blur-md transition-[transform,box-shadow,border-color] duration-300 ease-luxury group-hover:scale-110 group-hover:border-gold group-hover:shadow-[0_0_35px_rgba(124,58,237,0.5)] sm:h-16 sm:w-16"
+        className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-white/70 text-gold shadow-[0_0_20px_rgba(201,161,74,0.25)] backdrop-blur-md transition-[transform,box-shadow,border-color] duration-300 ease-luxury group-hover:scale-110 group-hover:border-gold group-hover:shadow-[0_0_35px_rgba(124,58,237,0.5)] sm:h-16 sm:w-16"
       >
         {Icon && (
           <Icon

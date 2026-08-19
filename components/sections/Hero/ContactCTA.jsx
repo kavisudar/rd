@@ -36,7 +36,7 @@ const CONTACT_LINKS = [
     restClassName: "text-gold",
     iconMotionClassName: "transition-transform duration-300 ease-luxury group-hover:[animation:call-ring_0.5s_ease-in-out]",
     hoverClassName:
-      "hover:border-gold/60 hover:bg-linear-to-br hover:from-gold hover:to-gold-light hover:text-white hover:shadow-[0_12px_30px_rgba(79,70,229,0.4)] focus-visible:border-gold/60 focus-visible:bg-linear-to-br focus-visible:from-gold focus-visible:to-gold-light focus-visible:text-white focus-visible:shadow-[0_12px_30px_rgba(79,70,229,0.4)] focus-visible:ring-gold/50",
+      "hover:border-gold/60 hover:bg-linear-to-br hover:from-gold hover:to-gold-light hover:text-white hover:shadow-[0_12px_30px_rgba(201,161,74,0.4)] focus-visible:border-gold/60 focus-visible:bg-linear-to-br focus-visible:from-gold focus-visible:to-gold-light focus-visible:text-white focus-visible:shadow-[0_12px_30px_rgba(201,161,74,0.4)] focus-visible:ring-gold/50",
   },
   {
     key: "email",

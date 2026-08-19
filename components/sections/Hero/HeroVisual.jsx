@@ -49,9 +49,9 @@ export default function HeroVisual() {
         </motion.div>
 
         {/* Grounding gradient - keeps the office recognizable, only darkens the base */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/50 via-ink/5 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-ink/50 via-ink/5 to-transparent" />
         {/* Warm brand tint, echoing the pendant lights */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-gold/15 via-transparent to-gold/10 mix-blend-overlay" />
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-brand-gold/15 via-transparent to-gold/10 mix-blend-overlay" />
         {/* Soft vignette */}
         <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_9vw_2vw_rgba(17,24,39,0.3)]" />
         {/* Film grain, same recipe as the global body texture */}

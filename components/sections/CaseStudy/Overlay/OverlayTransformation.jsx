@@ -12,7 +12,7 @@ export default function OverlayTransformation({ caseStudy }) {
       <FadeIn
         direction="up"
         duration={0.5}
-        className="flex flex-col justify-center gap-3 rounded-2xl border border-border bg-bg-secondary/50 p-6"
+        className="flex w-full flex-col justify-center gap-3 rounded-2xl border border-border bg-bg-secondary/50 p-6"
       >
         <span className="text-[11px] font-semibold uppercase tracking-widest text-text-muted sm:text-xs">Before</span>
         <p className="font-display text-lg leading-[1.25] text-text-secondary sm:text-xl">{headline}.</p>
@@ -28,7 +28,7 @@ export default function OverlayTransformation({ caseStudy }) {
       <FadeIn direction="up" delay={0.1} duration={0.5} className="mx-auto flex w-full max-w-[540px] flex-col gap-3">
         <span className="text-[11px] font-semibold uppercase tracking-widest text-brand-gold sm:text-xs">After</span>
         {caseStudy.solutionImage ? (
-          <div className="group relative mx-auto aspect-[540/720] w-full max-w-[540px] overflow-hidden rounded-2xl border border-border bg-ink shadow-card">
+          <div className="group relative mx-auto aspect-[673/780] w-full max-w-[540px] overflow-hidden rounded-2xl border border-border bg-ink shadow-card">
             <PortfolioImage
               src={caseStudy.solutionImage}
               alt=""
@@ -47,7 +47,7 @@ export default function OverlayTransformation({ caseStudy }) {
             </div>
           </div>
         ) : (
-          <div className="flex h-64 w-full flex-col justify-center gap-3 rounded-2xl border border-gold/20 bg-gold/5 p-6 sm:h-80 lg:h-[26rem]">
+          <div className="mx-auto flex aspect-[673/780] w-full max-w-[540px] flex-col justify-center gap-3 rounded-2xl border border-gold/20 bg-gold/5 p-6">
             <p className="font-display text-lg leading-[1.25] text-ink sm:text-xl">{caption}</p>
           </div>
         )}

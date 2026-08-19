@@ -5,7 +5,7 @@ import Magnetic from "@/components/animations/Magnetic";
 
 const VARIANTS = {
   solid:
-    "bg-linear-to-r from-gold via-gold to-gold-light text-white shadow-[0_8px_24px_rgba(79,70,229,0.28)] hover:shadow-[0_12px_32px_rgba(124,58,237,0.4)] hover:-translate-y-0.5",
+    "bg-gold text-black shadow-[0_8px_24px_rgba(201,161,74,0.28)] hover:shadow-[0_12px_32px_rgba(201,161,74,0.4)] hover:-translate-y-0.5",
   outline: "glass hover:bg-white/50 hover:border-gold/40",
   ghost: "hover:text-gold",
 };

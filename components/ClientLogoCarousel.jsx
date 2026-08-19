@@ -21,8 +21,8 @@ import s from "@/public/assets/images/client-logo/sisy.jpeg";
 const DEFAULT_LOGOS = [
   { src: logo1, alt: "Client 1 logo" },
   { src: logo2, alt: "Client 2 logo" },
-  { src: logo3, alt: "Client 3 logo" },
-  { src: logo4, alt: "Client 4 logo" },
+  { src: logo3, alt: "Client 3 logo", large: true },
+  { src: logo4, alt: "Client 4 logo", large: true },
   { src: logo5, alt: "Client 5 logo" },
   { src: logo6, alt: "Client 6 logo" },
   { src: logo7, alt: "Client 7 logo" },
@@ -32,20 +32,32 @@ const DEFAULT_LOGOS = [
   { src: logo11, alt: "Client 11 logo" },
   { src: logo12, alt: "Client 12 logo" },
   { src: vk, alt: "VK logo" },
-  { src: kp, alt: "Kappy logo" },
-  { src: dz, alt: "Dreamzone logo" },
-  { src: s, alt: "S logo" },
+  { src: kp, alt: "Kappy logo", xl: true },
+  { src: dz, alt: "Dreamzone logo", xl: true },
+  { src: s, alt: "S logo", xl: true },
 
 ];
 
 function LogoCard({ logo }) {
+  const padding = logo.xl
+    ? "px-6 py-2 sm:px-7 sm:py-2.5 lg:px-8 lg:py-3"
+    : "px-6 py-4 sm:px-7 sm:py-5 lg:px-8 lg:py-6";
+
   return (
-    <div className="glass flex items-center justify-center rounded-2xl px-6 py-4 transition-[transform,box-shadow,border-color] duration-300 ease-luxury hover:scale-105 hover:border-gold/50 hover:shadow-[0_0_24px_rgba(124,58,237,0.3)] sm:px-7 sm:py-5 lg:px-8 lg:py-6">
+    <div
+      className={`glass flex h-32 items-center justify-center rounded-2xl bg-[#FAF7F2] ${padding} transition-[transform,box-shadow,border-color] duration-300 ease-luxury hover:scale-105 hover:border-gold/50 hover:shadow-[0_0_24px_rgba(124,58,237,0.3)] sm:h-36 lg:h-40`}
+    >
       <Image
         src={logo.src}
         alt={logo.alt}
         loading="lazy"
-        className="h-12 w-auto object-contain opacity-90 transition-opacity duration-300 ease-out hover:opacity-100 sm:h-14 lg:h-16"
+        className={
+          logo.xl
+            ? "h-20 w-auto object-contain opacity-90 transition-opacity duration-300 ease-out hover:opacity-100 sm:h-24 lg:h-28"
+            : logo.large
+              ? "h-16 w-auto object-contain opacity-90 transition-opacity duration-300 ease-out hover:opacity-100 sm:h-20 lg:h-24"
+              : "h-12 w-auto object-contain opacity-90 transition-opacity duration-300 ease-out hover:opacity-100 sm:h-14 lg:h-16"
+        }
       />
     </div>
   );

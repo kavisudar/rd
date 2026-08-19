@@ -2,15 +2,7 @@ import { notFound } from "next/navigation";
 import caseStudies from "@/data/caseStudies.json";
 import company from "@/data/company.json";
 import { SITE_URL } from "@/lib/site";
-import CaseStudyHero from "@/components/sections/CaseStudy/Detail/CaseStudyHero";
-import ProjectSnapshot from "@/components/sections/CaseStudy/Detail/ProjectSnapshot";
-import ChallengeSection from "@/components/sections/CaseStudy/Detail/ChallengeSection";
-import ProcessTimeline from "@/components/sections/CaseStudy/Detail/ProcessTimeline";
-import SolutionShowcase from "@/components/sections/CaseStudy/Detail/SolutionShowcase";
-import ResultsShowcase from "@/components/sections/CaseStudy/Detail/ResultsShowcase";
-import ServicesShowcase from "@/components/sections/CaseStudy/Detail/ServicesShowcase";
-import GalleryShowcase from "@/components/sections/CaseStudy/Detail/GalleryShowcase";
-import NextCaseStudy from "@/components/sections/CaseStudy/Detail/NextCaseStudy";
+import CaseStudyPageContent from "@/components/sections/CaseStudy/CaseStudyPageContent";
 
 export function generateStaticParams() {
   return caseStudies.map((caseStudy) => ({ slug: caseStudy.slug }));
@@ -71,15 +63,13 @@ export default async function CaseStudyPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <CaseStudyHero caseStudy={caseStudy} />
-      <ProjectSnapshot caseStudy={caseStudy} />
-      <ChallengeSection caseStudy={caseStudy} />
-      <ProcessTimeline caseStudy={caseStudy} />
-      <SolutionShowcase caseStudy={caseStudy} />
-      <ResultsShowcase caseStudy={caseStudy} />
-      <ServicesShowcase caseStudy={caseStudy} />
-      <GalleryShowcase caseStudy={caseStudy} />
-      <NextCaseStudy nextCaseStudy={nextCaseStudy} />
+      <CaseStudyPageContent
+        caseStudy={caseStudy}
+        previousCaseStudy={caseStudies[(index - 1 + caseStudies.length) % caseStudies.length]}
+        nextCaseStudy={nextCaseStudy}
+        index={index}
+        total={caseStudies.length}
+      />
     </>
   );
 }

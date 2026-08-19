@@ -48,7 +48,7 @@ export default function Header() {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-luxury ${
-          showSurface ? "glass-nav shadow-[0_8px_32px_rgba(79,70,229,0.08)]" : "bg-transparent"
+          showSurface ? "glass-nav shadow-[0_8px_32px_rgba(201,161,74,0.08)]" : "bg-transparent"
         }`}
       >
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 sm:px-8 lg:px-12">

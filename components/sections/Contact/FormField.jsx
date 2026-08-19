@@ -47,7 +47,7 @@ export default function FormField({
           } ${
             showError
               ? "border-red-300 focus:border-red-400 focus:bg-white focus:shadow-[0_0_0_3px_rgba(248,113,113,0.15)]"
-              : "border-[#e9e3d6] focus:border-gold focus:bg-white focus:shadow-[0_0_0_3px_rgba(79,70,229,0.15)]"
+              : "border-[#e9e3d6] focus:border-gold focus:bg-white focus:shadow-[0_0_0_3px_rgba(201,161,74,0.15)]"
           }`}
         />
         {showValid && (

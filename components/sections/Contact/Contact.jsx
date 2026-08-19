@@ -50,7 +50,7 @@ export default function Contact() {
         className="pointer-events-none absolute inset-0 opacity-40 blur-3xl"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 30%, rgba(79,70,229,0.12), transparent 55%), radial-gradient(circle at 80% 70%, rgba(6,182,212,0.1), transparent 50%), repeating-linear-gradient(0deg, rgba(79,70,229,0.04) 0px, rgba(79,70,229,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(79,70,229,0.04) 0px, rgba(79,70,229,0.04) 1px, transparent 1px, transparent 64px)",
+            "radial-gradient(circle at 20% 30%, rgba(201,161,74,0.12), transparent 55%), radial-gradient(circle at 80% 70%, rgba(6,182,212,0.1), transparent 50%), repeating-linear-gradient(0deg, rgba(201,161,74,0.04) 0px, rgba(201,161,74,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,161,74,0.04) 0px, rgba(201,161,74,0.04) 1px, transparent 1px, transparent 64px)",
         }}
       />
 

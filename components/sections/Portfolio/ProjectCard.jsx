@@ -15,12 +15,12 @@ export default function ProjectCard({ project, onOpen }) {
       exit={{ opacity: 0, scale: 0.94 }}
       transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       onClick={() => onOpen(project)}
-      className="group relative block h-full w-[85%] shrink-0 snap-start overflow-hidden rounded-2xl border border-border text-left transition-[transform,box-shadow,border-color] duration-500 ease-luxury will-change-transform hover:-translate-y-1 hover:border-gold hover:shadow-[0_0_45px_rgba(124,58,237,0.3)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:w-[45%] lg:w-[calc((100%-3rem)/3)]"
+      className="group relative block aspect-[3/4] w-[280px] shrink-0 snap-start overflow-hidden rounded-2xl border border-border text-left transition-[transform,box-shadow,border-color] duration-500 ease-luxury will-change-transform hover:-translate-y-1 hover:border-gold hover:shadow-[0_0_45px_rgba(124,58,237,0.3)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:w-[380px] lg:w-[540px]"
     >
       <PortfolioImage
         src={project.images?.[0]}
         alt={project.title}
-        sizes="(min-width: 1024px) 45vw, 90vw"
+        sizes="(min-width: 1024px) 540px, (min-width: 640px) 380px, 280px"
         className="object-cover transition-transform duration-700 ease-luxury group-hover:scale-110"
       />
       {project.video && (

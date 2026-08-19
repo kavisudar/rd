@@ -98,7 +98,7 @@ export default function CaseStudyOverlay() {
               role="dialog"
               aria-modal="true"
               aria-label="Case study"
-              className="relative flex h-full w-full flex-col overflow-hidden border border-white/50 bg-linear-to-b from-white/85 to-white/60 shadow-[0_30px_80px_-20px_rgba(79,70,229,0.4),inset_0_1px_0_rgba(255,255,255,0.7)] backdrop-blur-2xl sm:rounded-[32px]"
+              className="relative flex h-full w-full flex-col overflow-hidden border border-white/50 bg-linear-to-b from-white/85 to-white/60 shadow-[0_30px_80px_-20px_rgba(201,161,74,0.4),inset_0_1px_0_rgba(255,255,255,0.7)] backdrop-blur-2xl sm:rounded-[32px]"
               style={{ WebkitBackdropFilter: "blur(40px) saturate(160%)", backdropFilter: "blur(40px) saturate(160%)" }}
             >
               <div

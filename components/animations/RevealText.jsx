@@ -43,6 +43,7 @@ export default function RevealText({
   stagger = 0.06,
   once = true,
   amount = 0.6,
+  inView = true,
   ...rest
 }) {
   const segs = segments ?? [{ text, className: undefined }];
@@ -53,12 +54,20 @@ export default function RevealText({
     return acc;
   }, []);
 
+  // Above-the-fold text (e.g. the Hero headline) is visible on first paint,
+  // so it should just play once on mount rather than being gated behind a
+  // whileInView/IntersectionObserver trigger - scroll-linked libraries and
+  // browser repaint quirks can otherwise leave a whileInView element stuck
+  // showing its "hidden" state after scrolling away and back.
+  const triggerProps = inView
+    ? { whileInView: "visible", viewport: { once, amount } }
+    : { animate: "visible" };
+
   return (
     <Tag className={className} {...rest}>
       <motion.span
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once, amount }}
+        {...triggerProps}
         variants={container}
         custom={stagger}
         transition={{ delayChildren: delay }}

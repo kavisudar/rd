@@ -13,12 +13,27 @@ import ServiceIcon from "./ServiceIcon";
  * wraps this component in a Framer Motion <motion.div> instead and this
  * root element just renders inert.
  */
-export default function ServiceCard({ service, index, className = "", style, ...rootProps }) {
+export default function ServiceCard({ service, index, onOpen, className = "", style, ...rootProps }) {
   const { title, subtitle, image, icon, tags = [] } = service;
+
+  const handleActivate = () => onOpen?.(service, index);
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      handleActivate();
+    }
+  };
 
   return (
     <article className={`h-full w-full ${className}`} style={style} {...rootProps}>
-      <div className="group/hover relative flex h-full flex-col overflow-hidden rounded-3xl border border-[#efe7d8] bg-surface shadow-[var(--shadow-card)] transition-[transform,box-shadow,border-color] duration-300 ease-out will-change-transform hover:-translate-y-2 hover:scale-[1.02] hover:border-brand-gold hover:shadow-[var(--shadow-card-hover)]">
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={handleActivate}
+        onKeyDown={handleKeyDown}
+        aria-label={`View details for ${title}`}
+        className="group/hover relative flex h-full cursor-pointer flex-col overflow-hidden rounded-3xl border border-[#efe7d8] bg-surface shadow-[var(--shadow-card)] transition-[transform,box-shadow,border-color] duration-300 ease-out will-change-transform hover:-translate-y-2 hover:scale-[1.02] hover:border-brand-gold hover:shadow-[var(--shadow-card-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+      >
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 transition-transform duration-1400 ease-out will-change-transform group-hover/hover:scale-110">
             <Image
@@ -61,12 +76,11 @@ export default function ServiceCard({ service, index, className = "", style, ...
               ))}
             </div>
 
-            <a
-              href="#contact"
-              aria-label={`Discuss ${title}`}
-              className="group/link mt-4 inline-flex w-fit items-center gap-3 text-xs font-medium uppercase tracking-widest text-ink"
+            <span
+              aria-hidden="true"
+              className="mt-4 inline-flex w-fit items-center gap-3 text-xs font-medium uppercase tracking-widest text-ink"
             >
-              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-border text-gold transition-all duration-500 ease-out group-hover/link:translate-x-1 group-hover/hover:border-gold group-hover/hover:bg-gold group-hover/hover:text-white group-hover/hover:shadow-[0_0_25px_rgba(79,70,229,0.4)]">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-border text-gold transition-all duration-500 ease-out group-hover/hover:translate-x-1 group-hover/hover:border-gold group-hover/hover:bg-gold group-hover/hover:text-white group-hover/hover:shadow-[0_0_25px_rgba(201,161,74,0.4)]">
                 <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" aria-hidden="true">
                   <path
                     d="M6 18L18 6M18 6H9M18 6V15"
@@ -79,9 +93,9 @@ export default function ServiceCard({ service, index, className = "", style, ...
               </span>
               <span className="relative">
                 Explore Service
-                <span className="absolute inset-x-0 -bottom-1 h-px origin-left bg-ink/20 transition-colors duration-300 ease-out group-hover/link:bg-gold" />
+                <span className="absolute inset-x-0 -bottom-1 h-px origin-left bg-ink/20 transition-colors duration-300 ease-out group-hover/hover:bg-gold" />
               </span>
-            </a>
+            </span>
           </div>
         </div>
       </div>

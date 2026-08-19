@@ -43,7 +43,7 @@ export default function OverlayFooter({ previousCaseStudy, nextCaseStudy, index,
         <button
           type="button"
           onClick={() => navigate(nextCaseStudy.slug)}
-          className="group inline-flex items-center gap-1.5 rounded-full bg-linear-to-r from-gold via-gold to-gold-light px-3.5 py-2 text-[11px] font-medium uppercase tracking-widest text-white shadow-[0_6px_18px_rgba(79,70,229,0.28)] transition-all duration-300 ease-luxury hover:shadow-[0_10px_26px_rgba(124,58,237,0.4)] sm:px-4 sm:text-xs"
+          className="group inline-flex items-center gap-1.5 rounded-full bg-linear-to-r from-gold via-gold to-gold-light px-3.5 py-2 text-[11px] font-medium uppercase tracking-widest text-white shadow-[0_6px_18px_rgba(201,161,74,0.28)] transition-all duration-300 ease-luxury hover:shadow-[0_10px_26px_rgba(124,58,237,0.4)] sm:px-4 sm:text-xs"
         >
           <span className="hidden sm:inline">Next Project</span>
           <span className="sm:hidden">Next</span>

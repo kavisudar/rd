@@ -13,7 +13,7 @@
   --color-bg-secondary: #eef4ff;
   --color-card: rgba(255, 255, 255, 0.6);
   --color-border: rgba(255, 255, 255, 0.7);
-  --color-gold: #4f46e5;
+  --color-gold: #c9a14a;
   --color-gold-light: #7c3aed;
   --color-gold-bright: #06b6d4;
   --color-brand-gold: #c9a14a;
@@ -28,8 +28,8 @@
 
   --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --shadow-glass: 0 8px 32px rgba(79, 70, 229, 0.08), 0 1px 1px rgba(255, 255, 255, 0.6) inset;
-  --shadow-glass-lift: 0 20px 48px rgba(79, 70, 229, 0.16), 0 1px 1px rgba(255, 255, 255, 0.7) inset;
+  --shadow-glass: 0 8px 32px rgba(201, 161, 74, 0.08), 0 1px 1px rgba(255, 255, 255, 0.6) inset;
+  --shadow-glass-lift: 0 20px 48px rgba(201, 161, 74, 0.16), 0 1px 1px rgba(255, 255, 255, 0.7) inset;
   --shadow-card: 0 2px 8px rgba(17, 24, 39, 0.05), 0 16px 40px -8px rgba(17, 24, 39, 0.12);
   --shadow-card-hover: 0 4px 14px rgba(17, 24, 39, 0.07), 0 26px 56px -10px rgba(17, 24, 39, 0.18);
 }
@@ -49,7 +49,7 @@ html {
   background:
     radial-gradient(ellipse 900px 600px at 12% -8%, rgba(124, 58, 237, 0.14), transparent 60%),
     radial-gradient(ellipse 800px 700px at 88% 12%, rgba(6, 182, 212, 0.13), transparent 60%),
-    radial-gradient(ellipse 900px 800px at 20% 92%, rgba(79, 70, 229, 0.1), transparent 60%),
+    radial-gradient(ellipse 900px 800px at 20% 92%, rgba(201, 161, 74, 0.1), transparent 60%),
     radial-gradient(ellipse 700px 600px at 96% 96%, rgba(124, 58, 237, 0.08), transparent 60%),
     linear-gradient(180deg, #f8faff 0%, #eef4ff 55%, #f8faff 100%);
   background-attachment: fixed, fixed, fixed, fixed, fixed;
@@ -108,7 +108,7 @@ body::after {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  box-shadow: inset 0 0 min(22vw, 280px) rgba(79, 70, 229, 0.05);
+  box-shadow: inset 0 0 min(22vw, 280px) rgba(201, 161, 74, 0.05);
 }
 
 /*
@@ -183,7 +183,7 @@ body > * {
   }
 
   .text-gradient {
-    background: linear-gradient(120deg, #4f46e5, #7c3aed 55%, #06b6d4);
+    background: linear-gradient(120deg, #c9a14a, #7c3aed 55%, #06b6d4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -213,6 +213,7 @@ body > * {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 
   .text-gold-shimmer-loop {
@@ -235,6 +236,7 @@ body > * {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 
   .btn-glow {
@@ -242,7 +244,7 @@ body > * {
   }
 
   .btn-glow:hover {
-    box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.25), 0 12px 32px rgba(79, 70, 229, 0.28);
+    box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.25), 0 12px 32px rgba(201, 161, 74, 0.28);
     transform: translateY(-2px);
   }
 
@@ -266,12 +268,12 @@ body > * {
     -webkit-backdrop-filter: blur(24px) saturate(160%);
     border: 1px solid rgba(239, 231, 216, 0.8);
     border-radius: 32px;
-    box-shadow: 0 4px 16px rgba(17, 24, 39, 0.05), 0 32px 64px -20px rgba(79, 70, 229, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 16px rgba(17, 24, 39, 0.05), 0 32px 64px -20px rgba(201, 161, 74, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.7);
     transition: box-shadow 300ms var(--ease-luxury), transform 300ms var(--ease-luxury);
   }
 
   .contact-form-card:hover {
-    box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06), 0 40px 80px -20px rgba(79, 70, 229, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06), 0 40px 80px -20px rgba(201, 161, 74, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.75);
     transform: translateY(-2px);
   }
 }
@@ -330,10 +332,10 @@ body > * {
 @keyframes card-glow-breathe {
   0%,
   100% {
-    box-shadow: 0 4px 16px rgba(17, 24, 39, 0.06), 0 20px 48px rgba(79, 70, 229, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 16px rgba(17, 24, 39, 0.06), 0 20px 48px rgba(201, 161, 74, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.8);
   }
   50% {
-    box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08), 0 26px 60px rgba(79, 70, 229, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+    box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08), 0 26px 60px rgba(201, 161, 74, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.85);
   }
 }
 

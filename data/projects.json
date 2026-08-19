@@ -2,102 +2,102 @@
   "projects": [
     {
       "id": 1,
-      "title": "My Holiday Club",
-      "category": "Branding",
+      "title": "Golden Vista Kodaikanal",
+      "category": "Tourism",
       "location": "Chennai",
       "year": "2024",
       "images": ["/assets/images/client/c9.png"],
       "size": "large",
-      "description": "A full brand identity refresh — logo system, color palette, and collateral — for a growing interior design studio expanding into new cities.",
-      "liveUrl": "https://example.com/work/my-holiday-club"
+      "description": "THE PRINCESS OF HILLS – KODAIKANAL famous for its beauty, now has a new charm commanding your attention! Where Luxury meets heritage, a new breed of Modern Homestay residence is born.",
+      "liveUrl": "https://goldenvistakodai.com/"
     },
     {
       "id": 2,
       "title": "Silk in Six Yard",
-      "category": "E-Commerce",
-      "location": "Bengaluru",
+      "category": "E-commerce",
+      "location": "Chennai",
       "year": "2023",
       "images": ["/assets/images/client/c4.png"],
       "size": "wide",
-      "description": "A headless storefront built for scale, with sub-second page loads and a checkout flow that lifted conversion by 32%.",
-      "liveUrl": "https://example.com/work/silk-in-six-yard"
+      "description": "Sisy began with something beautifully simple—a love for sarees and the emotions woven into them. The ones we borrowed from our mothers' wardrobes. The ones we saved for life's biggest celebrations.",
+      "liveUrl": "https://www.silkinsixyards.com/"
     },
     {
       "id": 3,
-      "title": "Kridha SaaS Dashboard",
-      "category": "App Development",
+      "title": "RK Coffee Industries",
+      "category": "Foods",
       "location": "Hyderabad",
       "year": "2024",
       "images": ["/assets/images/client/c3.png"],
       "size": "tall",
-      "description": "A data-dense analytics dashboard redesigned around clarity — fewer clicks to insight, and a component library the client's own team now maintains.",
-      "liveUrl": "https://example.com/work/kridha-saas-dashboard"
+      "description": "Our Company is Supported with a state-of-the-art Infrastructure facility, located at Chennai, TamilNadu. This facility allows us to meet the bulk demand of clients within a committed time frame. We have a team of procuring agents who conduct market research and survey to select the trusted vendors. Further, our aim is to offer reliable products and services to our valued clients with maximum satisfaction.",
+      "liveUrl": "https://www.rkcoffeeindustries.com/"
     },
     {
       "id": 4,
-      "title": "Meridian Corporate Website",
-      "category": "Website",
+      "title": "My Holiday Club ",
+      "category": "Tourism",
       "location": "Mumbai",
       "year": "2022",
       "images": ["/assets/images/client/c2.png"],
       "size": "normal",
-      "description": "A corporate site rebuilt from the ground up for performance and SEO, moving the client onto page-one rankings for their core search terms.",
-      "liveUrl": "https://example.com/work/meridian-corporate-website"
+      "description": "My Holiday Club is an innovative umbrella concept business model, beautifully capsuled and presented to you. It had been envisioned by a group of travel professionals, twelve years back. It was their vision to form a club for travelers – people who love to adventure through God's creation, and then provide them with as many facilities as possible, under one roof with utmost member satisfaction guaranteed.",
+      "liveUrl": "https://myholidayclub.co.in/"
     },
     {
       "id": 5,
-      "title": "Aura Clothing Storefront",
-      "category": "E-Commerce",
+      "title": "Kamali Food Products",
+      "category": "Foods",
       "location": "New Delhi",
       "year": "2023",
       "images": ["/assets/images/client/c5.png"],
       "size": "normal",
-      "description": "A fashion e-commerce experience with custom lookbook pages and an Instagram-integrated shoppable feed.",
-      "liveUrl": "https://example.com/work/aura-clothing-storefront"
+      "description": "Kamali Food Products was born from a simple belief — that the best food comes from a home kitchen, made with love, using ingredients you can trust. What started as a passion for preserving authentic Tamil recipes has grown into a beloved brand across Chennai.",
+      "liveUrl": "https://kamalifoodproduct.com/"
     },
     {
       "id": 6,
-      "title": "Willowbrook Hospitality App",
-      "category": "App Development",
+      "title": "Manjella ",
+      "category": "Cosmetics",
       "location": "Goa",
       "year": "2024",
       "images": ["/assets/images/client/c6.png"],
       "size": "tall",
-      "description": "A booking and concierge app for a boutique hotel group, cutting phone reservations in half within the first quarter.",
-      "liveUrl": "https://example.com/work/willowbrook-hospitality-app"
+      "description": "Manjella began with a simple frustration — shelves full of products that promised everything and delivered irritation. What started as a search for something gentler turned into years of learning traditional formulations and modern skincare science.",
+      "liveUrl": "https://ecommerce.tod360ai.in/store/manjella-store"
     },
     {
       "id": 7,
-      "title": "Cascade Restaurant Ordering Platform",
-      "category": "Website",
+      "title": "Allites",
+      "category": "Healthcare & Dental",
       "location": "Pune",
       "year": "2023",
       "images": ["/assets/images/client/c8.png"],
       "size": "wide",
-      "description": "An online ordering and table-reservation platform synced with the kitchen's POS, replacing three separate third-party tools.",
-      "liveUrl": "https://example.com/work/cascade-restaurant-ordering-platform"
+      "description": "ALLITES LIFE SCIENCES is a Multispeciality Pharmaceutical company engaged in the Sales and Marketing of high-quality Pharmaceutical products. We aim to change the trajectory of healthcare by embracing innovation to bring ‘ELITE CARE’ for all.",
+      "liveUrl": "https://allites.in/"
     },
     {
       "id": 8,
-      "title": "Linen & Co. Digital Campaign",
-      "category": "Digital Marketing",
+      "title": "Deekshu Implant Center",
+      "category": "Healthcare & Dental",
       "location": "Chennai",
       "year": "2024",
       "images": ["/assets/images/client/c1.png"],
       "size": "normal",
-      "description": "An SEO and paid-social campaign that grew a boutique retailer's organic traffic 3x in six months.",
-      "liveUrl": "https://example.com/work/linen-co-digital-campaign"
+      "description": "We are more than just a clinic — we are your partners in lifelong oral health. Operating in Hosur and Sarjapura, Deekshu Dental Implant Center blends advanced technology with genuine, patient-first compassion. Our foundation is built on Clinical Excellence and Integrity, ensuring every patient receives world-class care in a warm, welcoming environment.",
+      "liveUrl": "https://deekshuimplant.com/"
     },
     {
       "id": 9,
-      "title": "Skyline Realty Lead Platform",
-      "category": "Website",
+      "title": "LK Traders",
+      "category": "E-commerce",
       "location": "Chennai",
       "year": "2023",
       "images": ["/assets/images/client/c7.png"],
       "size": "normal",
-      "description": "A property-listing and lead-capture site for a real estate developer, with an inquiry funnel that doubled qualified leads.",
-      "liveUrl": "https://example.com/work/skyline-realty-lead-platform"
+      "description": "Welcome to LK Traders, Chennai's premier exporter and trader of premium products. For over five years, we've been bridging cultures and continents — delivering exceptional-quality fresh flowers, vegetables, nuts & spices, idols, fancy gifts, pooja items, clothes, and accessories to the USA, UK, Canada, Middle East, Australia, Singapore, and Malaysia.",
+      "liveUrl": "https://ecommerce.tod360ai.com/store/lk-traders"
     }
   ]
 }

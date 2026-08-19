@@ -39,7 +39,7 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="relative flex h-screen w-full flex-col overflow-hidden bg-bg py-10 sm:py-12">
+    <section id="portfolio" className="relative flex min-h-screen w-full flex-col overflow-hidden bg-bg py-10 sm:py-12">
       <div className="mx-auto w-full max-w-[1600px] shrink-0 px-6 sm:px-8 lg:px-12">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading eyebrow="Show Case" title="Client Projects" />
@@ -59,7 +59,7 @@ export default function Portfolio() {
 
         <div
           ref={trackRef}
-          className="flex h-full w-full snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth px-6 pb-4 scrollbar-none [&::-webkit-scrollbar]:hidden sm:px-8 lg:px-24"
+          className="flex h-full w-full items-center snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth px-6 pb-4 scrollbar-none [&::-webkit-scrollbar]:hidden sm:px-8 lg:px-24"
         >
           <AnimatePresence mode="popLayout">
             {filtered.map((project) => (

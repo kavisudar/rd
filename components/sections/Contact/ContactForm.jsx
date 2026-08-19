@@ -327,7 +327,7 @@ export default function ContactForm() {
               className={`h-18 w-full resize-none rounded-2xl border bg-[#fbfaf8] px-4 py-2.5 text-sm text-ink outline-none transition-[border-color,box-shadow,background-color] duration-300 ease-luxury placeholder:text-text-muted/70 ${
                 touched.description && errors.description
                   ? "border-red-300 focus:border-red-400 focus:bg-white focus:shadow-[0_0_0_3px_rgba(248,113,113,0.15)]"
-                  : "border-[#e9e3d6] focus:border-gold focus:bg-white focus:shadow-[0_0_0_3px_rgba(79,70,229,0.15)]"
+                  : "border-[#e9e3d6] focus:border-gold focus:bg-white focus:shadow-[0_0_0_3px_rgba(201,161,74,0.15)]"
               }`}
             />
             {touched.description && !errors.description && form.description.trim().length > 0 && (

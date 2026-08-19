@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { services } from "@/data/services";
 import { useServicesAnimation } from "@/hooks/useServicesAnimation";
 import ServiceCard from "./ServiceCard";
+import ServiceDetail from "./ServiceDetail";
 
 /**
  * Two-column services gallery. The 50/50 split below is a plain CSS Grid
@@ -33,8 +34,11 @@ import ServiceCard from "./ServiceCard";
 export default function ServicesSection() {
   const sectionRef = useRef(null);
   const count = services.length;
+  const [activeServiceId, setActiveServiceId] = useState(null);
 
   useServicesAnimation(sectionRef);
+
+  const activeService = services.find((service) => service.id === activeServiceId) ?? null;
 
   return (
     <section
@@ -120,12 +124,23 @@ export default function ServicesSection() {
                 data-service-card
                 className="w-full shrink-0 md:h-full md:w-[calc(100%/var(--card-count))] md:px-3 lg:px-5"
               >
-                <ServiceCard service={service} index={index} className="h-full" />
+                <ServiceCard
+                  service={service}
+                  index={index}
+                  className="h-full"
+                  onOpen={(selected) => setActiveServiceId(selected.id)}
+                />
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      <ServiceDetail
+        service={activeService}
+        isOpen={Boolean(activeService)}
+        onClose={() => setActiveServiceId(null)}
+      />
     </section>
   );
 }

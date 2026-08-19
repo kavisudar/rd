@@ -5,7 +5,7 @@ import FadeIn from "@/components/animations/FadeIn";
 
 export default function About() {
   return (
-    <section id="about" className="relative flex h-screen w-full items-center overflow-hidden bg-bg">
+    <section id="about" className="relative flex min-h-screen w-full items-center overflow-hidden bg-bg py-16 sm:py-20">
       <div className="mx-auto w-full max-w-[1600px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="flex flex-col gap-5 lg:col-span-7">

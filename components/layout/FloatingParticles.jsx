@@ -10,7 +10,7 @@ const PARTICLES = [
 ];
 
 const HUE_CLASS = {
-  gold: "bg-gold/25 shadow-[0_0_16px_rgba(79,70,229,0.35)]",
+  gold: "bg-gold/25 shadow-[0_0_16px_rgba(201,161,74,0.35)]",
   light: "bg-gold-light/25 shadow-[0_0_16px_rgba(124,58,237,0.35)]",
   bright: "bg-gold-bright/25 shadow-[0_0_16px_rgba(6,182,212,0.35)]",
 };
